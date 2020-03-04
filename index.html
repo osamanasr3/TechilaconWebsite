@@ -52,22 +52,22 @@
 </head>
 
 <body id="scroll-top" data-spy="scroll">
-
-    <div class="box-layout">
-            <!-- Video starts here-->
+    <div class="box-layout"> 
         <section class="banner banner-nine">
             <div class="topbanner">
                 <img src="images/techila_white.png">
                 <div class="menu">
                     <ul>
-                        <li>Home</li>
-                        <li>Line Up</li>
-                        <li href="#contactanchor">Contact</li>
-                        <li>JOIN</li>
+                        <li><a href="#" class="page-scroll">Home</a></li>
+                        <li><a href="#" class="page-scroll">Line Up</a></li>
+                        <li><a href="#GetOnTechila" class="page-scroll">Contact</a></li>
+                        <li><a href="#signup" class="page-scroll">JOIN</a></li>
                     </ul>
                 </div>
             </div>
+            <h1>COMING SOON.</h1>
             <video id="bg" src="media/tgc.mp4" autoplay="true" loop="true" muted="true"></video>
+             
         </section>
             <!-- Video ends here-->
 
@@ -87,9 +87,11 @@
             </div>
         </section> -->
 
+
+
         <section class="poweredby" id="poweredby" >
              <div class="text-center">
-                <p >A 2-day power-up for tech startups in Egypt, taking place on the 12 & 13 June 2020 @ The Greek Campus.
+                <p >A 2-day power-up for tech startups in Egypt, taking place on the <br> 12 & 13 June 2020 @ The Greek Campus.
                 </p>
                 <h3>POWERED BY</h3>
              </div>
@@ -112,19 +114,15 @@
                  <div class="service-item">
                      <h4>32+<br>MASTERCLASSES</h4>
                  </div>
-                 <!-- service-item -->
                  <div class="service-item">
                      <h4>1<br>HACKATHON</h4>
                  </div>
-                 <!-- service-item -->
                  <div class="service-item">
                      <h4>12+<br>TOOLS</h4>
-                     <!-- service-item -->
                  </div>
              </div>
         </section>
 
-    <!-- Countdown ends here -->
         <section id="aboutanchor">
 
         <section class="services" id="about">
@@ -173,7 +171,7 @@
             </div>
             </div>
         </section>
-
+ 
         <section class="signup" id="signup">
             <div class="section-header text-center">
                 <h1>KNOW WHEN WE'RE LIVE.</h1>
@@ -192,7 +190,7 @@
         </section>
 
 
-        <section class="newsletter" id="contact">
+        <section class="newsletter" id="GetOnTechila">
             <div class="container">
                 <div class="left-half">
                     <h1>Get on Techila Con!</h1>
@@ -231,54 +229,195 @@
                     </form>
                 </div>
             </div>
-                <!-- container -->
         </section>
 
 
+    <section class="pricing padding-120" id="pricing">
+            <div class="container">
+               <div class="row">
+                  <div class="section-header">
+                     <h2>event tickets Plan</h2>
+                  </div>
+                  <div class="PricingTiming">
+                    <a>Early</a>
+                    <a> | </a>
+                    <a>Normal</a>
+                    <a> | </a>
+                    <a>Late</a>
+                  </div>
+                  <div class="sliderSwitch">
+                    <div class="slidegroup">
+                     <a>Single</a>
+                     <label class="switch">
+                       <input type="checkbox" onclick='changeTickets(this)''>
+                       <span class="slider round"></span>
+                     </label>
+                     <a>Group</a>
+                     </div>
+                  </div>
+
+                  <div class="section-wrapper">
+                     <div class="row">
+                        <div class="col-md-12 col-sm-6 col-xs-12">
+                           <div class="pricing-item" id="SingleBasic">
+                              <div class="pricing-all">
+                                 <div class="pricing-title">
+                                    <h5>Single Basic Ticket</h5>
+                                 </div>
+                                 <div class="pricing-content">
+                                    <ul>
+                                       <li>Conference Tickets</li>
+                                       <li>Free Lunch And Coffee</li>
+                                       <li>Free Event T-shirt</li>
+                                       <li class="close-offer">Add Speakers Twogather</li>
+                                       <li class="close-offer">Add Speakers Dinner</li>
+                                       <li class="close-offer">Enjoy Night Music</li>
+                                    </ul>
+                                 </div>
+                                 <div class="pricing-thumb">
+                                    <img src="images/11-04-19/pricing/pricing1.png" alt="pricing">
+                                 </div>
+                              </div>
+                              <div class="pricing-button">
+                                 <div class="price">
+                                    <span>$100</span>
+                                    <a href="#">get tickets!</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-12 col-sm-6 col-xs-12">
+                           <div class="pricing-item" id="SinglePro">
+                              
+                              <div class="pricing-all">
+                                 <div class="pricing-title">
+                                    <h5>Single Pro Ticket</h5>
+                                 </div>
+                                 <div class="pricing-content">
+                                    <ul>
+                                       <li>Conference Tickets</li>
+                                       <li>Free Lunch And Coffee</li>
+                                       <li>Free Event T-shirt</li>
+                                       <li class="close-offer">Add Speakers Twogather</li>
+                                       <li class="close-offer">Add Speakers Dinner</li>
+                                       <li class="close-offer">Enjoy Night Music</li>
+                                    </ul>
+                                 </div>
+                                 <div class="pricing-thumb">
+                                    <img src="images/11-04-19/pricing/pricing1.png" alt="pricing">
+                                 </div>
+                              </div>
+                              <div class="pricing-button">
+                                 <div class="price">
+                                    <span>$100</span>
+                                    <a href="#">get tickets!</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-12 col-sm-6 col-xs-12">
+                           <div class="pricing-item" id="GroupBasic" style="display:none">
+                              
+                              <div class="pricing-all">
+                                 <div class="pricing-title">
+                                    <h5>Group Basic Ticket</h5>
+                                 </div>
+                                 <div class="pricing-content">
+                                    <ul>
+                                       <li>Conference Tickets</li>
+                                       <li>Free Lunch And Coffee</li>
+                                       <li>Free Event T-shirt</li>
+                                       <li class="close-offer">Add Speakers Twogather</li>
+                                       <li class="close-offer">Add Speakers Dinner</li>
+                                       <li class="close-offer">Enjoy Night Music</li>
+                                    </ul>
+                                 </div>
+                                 <div class="pricing-thumb">
+                                    <img src="images/11-04-19/pricing/pricing1.png" alt="pricing">
+                                 </div>
+                              </div>
+                              <div class="pricing-button">
+                                 <div class="price">
+                                    <span>$100</span>
+                                    <a href="#">get tickets!</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-12 col-sm-6 col-xs-12">
+                           <div class="pricing-item" id="GroupPro" style="display:none">
+                              
+                              <div class="pricing-all">
+                                 <div class="pricing-title">
+                                    <h5>Group Pro Ticket</h5>
+                                 </div>
+                                 <div class="pricing-content">
+                                    <ul>
+                                       <li>Conference Tickets</li>
+                                       <li>Free Lunch And Coffee</li>
+                                       <li>Free Event T-shirt</li>
+                                       <li class="close-offer">Add Speakers Twogather</li>
+                                       <li class="close-offer">Add Speakers Dinner</li>
+                                       <li class="close-offer">Enjoy Night Music</li>
+                                    </ul>
+                                 </div>
+                                 <div class="pricing-thumb">
+                                    <img src="images/11-04-19/pricing/pricing1.png" alt="pricing">
+                                 </div>
+                              </div>
+                              <div class="pricing-button">
+                                 <div class="price">
+                                    <span>$100</span>
+                                    <a href="#">get tickets!</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+    </section>
 
 
+        <section class="sponsor">
+            <div class="section-header text-center">
+                <h3>MAIN PARTNERS</h3>
+            </div>
 
-        <section id="sponsors">
-            <!-- Sponsor start here -->
-            <section class="sponsor">
-                <div class="section-header text-center">
-                    <h3>MAIN PARTNERS</h3>
+            <div class="sponsor-item">
+                <div class="sponsor-img">
+                    <img src="images/sponsors/geekcampus.png" alt="sponsor image">
                 </div>
-
-                <div class="sponsor-item">
-                    <div class="sponsor-img">
-                        <img src="images/sponsors/geekcampus.png" alt="sponsor image">
-                    </div>
+            </div>
+            <div class="section-header text-center">
+                <h3>ECOSYSTEM PARTNERS</h3>
+            </div>
+            <div class="sponsor-item">
+                <div class="sponsor-img">
+                        <img src="images/sponsors/seamless.png" alt="sponsor image" class="">
+                        <img src="images/sponsors/swb.png" alt="sponsor image" class="">
+                        <img src="images/sponsors/ebda3.png" alt="sponsor image" class="">
+                        <img src="images/sponsors/egdroid.png" alt="sponsor image" class="">
+                        <img src="images/sponsors/swifty.png" alt="sponsor image" class="">
                 </div>
-                <div class="section-header text-center">
-                    <h3>ECOSYSTEM PARTNERS</h3>
+            </div>
+            <div class="section-header text-center">
+                <h3>MEDIA PARTNERS</h3>
+            </div>
+            <div class="sponsor-item">
+                <div class="sponsor-img">
+                    <img src="images/sponsors/wee.png" alt="sponsor image" >
                 </div>
-                <!-- sponsor-item -->
-                <div class="sponsor-item">
-                    <div class="sponsor-img">
-                            <img src="images/sponsors/seamless.png" alt="sponsor image" class="">
-                            <img src="images/sponsors/swb.png" alt="sponsor image" class="">
-                            <img src="images/sponsors/ebda3.png" alt="sponsor image" class="">
-                            <img src="images/sponsors/egdroid.png" alt="sponsor image" class="">
-                            <img src="images/sponsors/swifty.png" alt="sponsor image" class="">
-                    </div>
-                </div>
-                <div class="section-header text-center">
-                    <h3>MEDIA PARTNERS</h3>
-                </div>
-                <!-- sponsor-item -->
-                <div class="sponsor-item">
-                    <div class="sponsor-img">
-                        <img src="images/sponsors/wee.png" alt="sponsor image" >
-                    </div>
-                </div>
-            <!-- container -->
+            </div>
+            <div class="sponsor-join-button">
+                <p>BECOME A PARTNER OR SPONSOR</p>
+            </div>
         </section>
-            <!-- sponsor -->
-            <!-- Sponsor end here -->
+
+
         <div id="contactanchor"></div>
             
-            <!-- Footer Start here -->
             <footer>
                 <div class="copyright">
                     <p>©Techila Con, powered by Startups Galaxy & Code Geist.</p>
@@ -290,9 +429,6 @@
                     <p>hi@techilacon.com</p>
                 </div>
             </footer>
-         <!-- footer section ending here -->
-      </div>
-
 
     <!-- jQuery -->
     <script src="assets/js/jquery-3.1.1.min.js"></script>
