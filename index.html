@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>BigEvent</title>
+    <title>Join Techila Con | 12-13 June @ TGC Egypt</title>
 
-
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i%7CPoppins:300,400,500,600,700" rel="stylesheet">
 
@@ -48,11 +48,8 @@
     <!-- Responsive -->
     <link href="assets/css/responsive.css" rel="stylesheet">
 
+    <div class="box-layout">
 
-</head>
-
-<body id="scroll-top" data-spy="scroll">
-    <div class="box-layout"> 
         <section class="banner banner-nine">
             <div class="topbanner">
                 <img src="images/techila_white.png">
@@ -69,6 +66,7 @@
             <video id="bg" src="media/tgc.mp4" autoplay="true" loop="true" muted="true"></video>
              
         </section>
+
             <!-- Video ends here-->
 
             <!-- Countdown starts here -->
@@ -88,6 +86,7 @@
         </section> -->
 
 
+                
 
         <section class="poweredby" id="poweredby" >
              <div class="text-center">
@@ -124,6 +123,7 @@
         </section>
 
         <section id="aboutanchor">
+
 
         <section class="services" id="about">
             <div class="container">
@@ -173,20 +173,22 @@
         </section>
  
         <section class="signup" id="signup">
+          <div class="signup-hide" id="signup-hide">
             <div class="section-header text-center">
-                <h1>KNOW WHEN WE'RE LIVE.</h1>
-            <div class="section-header text-center">
-            <div class="section-header text-center">
+                <h1>KNOW WHEN WE'RE LIVE.</h1>  
                 <p>Signup with your email and be the first to buy early bird tickets with discounts. Those who signup automatically get a promocode to use.<br> Are you ready for #Techila?</p>
-            <div class="section-header text-center">
-            <div class="section-header text-center">
-                <form action="/">
-                    <input type="text" name="FirstName" id="FirstName" placeholder="First Name">
-                    <input type="text" name="LastName" id="LastName" placeholder="Last Name">
-                    <input type="text" name="Email" id="Email" placeholder="Email Address">
-                    <input type="submit" name="SignUp" value="Sign Up" onclick="submit_form()">
+                <p class="newsletter_error" id="newsletter_error">&#10006 Error</p>
+                <form action="/" name="submit-mail">
+                    <input type="text" name="First Name" id="FirstName" placeholder="First Name">
+                    <input type="text" name="Last Name" id="LastName" placeholder="Last Name">
+                    <input type="text" name="Email" id="SignUpEmail" placeholder="Email Address">
+                    <input type="submit" name="SignUp" value="Sign Up" onclick="submit_mail()">
                 </form>
-            <div class="section-header text-center">
+            </div>
+          </div>
+          <div class="signup-complete" id="signup-complete">
+            <p>Great! Looking forward to seeing you at Techila Con.</p>
+          </div>
         </section>
 
 
@@ -199,40 +201,53 @@
 
                 </div>
                 <div class="right-half"> 
-                    <form action="/">
+                    <form action="/" name="submit-to-google-sheet">
                         <p class="form-input-title">Name*</p>
+                        <p class="error" id="error-name">&#10006 Error</p>
+                        <p class="form-input-title"></p>
+
                         <div class="firstName">
-                            <input type="text" name="Name" id="Name">
+                            <input type="text" name="First Name" id="firstName">
                             <p>First Name</p>
                         </div>
                         <div class="lastName">
-                            <input type="text" name="Name" id="Name">
+                            <input type="text" name="Last Name" id="lastName">
                             <p>Last Name</p>
                         </div>
+
                         <p class="form-input-title">Mobile Number*<br></p>
+                        <p class="error" id="error-mobile">&#10006 Error</p>
+                        <p class="form-input-title"></p>
+
                         <p class="form-input-title-desc">Please interest a number we can reach you on.</p>
-                        <input type="text" name="Mobile" id="Mobile">
+                        <input type="text" name="mobile" id="mobile">
                         <p class="form-input-title">Email*<br></p>
+                        <p class="error" id="error-email">&#10006 Error</p>
+                        <p class="form-input-title"></p>
                         <p class="form-input-title-desc">Please interest an email we can reach you on.</p>
-                        <input type="text" name="Email" id="Email">
+                        <input type="text" name="email" id="email">
                         <p class="form-input-title">I am interested in becoming a: *</p>
-                        <select name="cars" id="Looking_To">
+                        <select name="Role" id="Role">
                             <option value="Sponsor">Sponsor</option>
                             <option value="Startup">Joining as a Startup</option>
                             <option value="Media">Media Partner</option>
                             <option value="Community">Community Partner</option>
                             <option value="Other">Other</option>
                         </select>
+                        <p class="form-input-title"></p>
+                        <p class="error" id="error-message">&#10006 Error</p>
                         <p class="form-input-title">Message *</p>
-                ​        <textarea id="Comment" rows="5"></textarea> 
+                ​        <textarea id="message" name="Message" rows="5"></textarea>
+                        <!-- <div class="loader"></div>  -->
                         <input type="submit" name="send" value="send" onclick="submit_form()">
+
                     </form>
                 </div>
             </div>
         </section>
 
 
-    <section class="pricing padding-120" id="pricing">
+    <!-- <section class="pricing padding-120" id="pricing">
             <div class="container">
                <div class="row">
                   <div class="section-header">
@@ -377,7 +392,7 @@
                   </div>
                </div>
             </div>
-    </section>
+    </section> -->
 
 
         <section class="sponsor">
@@ -411,7 +426,7 @@
                 </div>
             </div>
             <div class="sponsor-join-button">
-                <p>BECOME A PARTNER OR SPONSOR</p>
+                <a href="#GetOnTechila" class="page-scroll">BECOME A PARTNER OR SPONSOR</a>
             </div>
         </section>
 
@@ -420,13 +435,13 @@
             
             <footer>
                 <div class="copyright">
-                    <p>©Techila Con, powered by Startups Galaxy & Code Geist.</p>
+                    <a>©Techila Con, powered by Startups Galaxy & Code Geist.</a>
                 </div>
                 <div class=logos>
                     <img></img>
                 </div>
                 <div class="contactmail">
-                    <p>hi@techilacon.com</p>
+                    <a href="mailto:hi@techilacon.com?subject=Hey There Techila Con">hi@techilacon.com</a>
                 </div>
             </footer>
 
@@ -572,3 +587,4 @@
 </body>
 
 </html>
+

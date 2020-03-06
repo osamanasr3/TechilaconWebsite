@@ -669,7 +669,8 @@
 
 	.tricolumntitles .service-item{
 		width:100%;
-		padding-bottom:5%;
+		padding-bottom:10%;
+		padding-top:10%;
 	}
 	.services .row{
 		/*border: 1px solid blue;*/
@@ -764,6 +765,9 @@
 		float:left;
 		border: 4px solid red;*/
 	}
+	.poweredby .service-item img{
+		width:200px;
+	}
 	.signup .section-header{
 		/*border: 2px solid red;*/
 		padding: 0px 0px 0px 0px;
@@ -826,27 +830,37 @@
 	}
 
 	.sponsor .sponsor-join-button p{
-    padding:20px 10px 20px 10px;
-    color:white;
-    background-color:#FD7359;
-    width:80%;
-    margin:0 auto;
-    border-radius: 5px;
-    font-weight:normal;
-    border: 2px solid #FD7359;
-}
+	    padding:20px 10px 20px 10px;
+	    color:white;
+	    background-color:#FD7359;
+	    width:80%;
+	    margin:0 auto;
+	    border-radius: 5px;
+	    font-weight:normal;
+	    border: 2px solid #FD7359;
+	}
 	.banner-nine video{
 	    position:static;
 	}
 	.banner-nine h1{
-    font-size:35px;
-}
-.mobile-menu-area{
+    	font-size:35px;
+	}
+	.mobile-menu-area{
 		display:block;
 		border: 50px solid red;
 	}
 	.pricing {
 		padding: 0px 0px 0px 0px;
 		margin: 0px 0px 0px 0px;
+	}
+	footer .copyright{
+		width:100%;
+	}
+	footer .logos{
+		width:100%;
+	}
+	footer .contactmail{
+		width:100%;
+	    color:#FD7359;
 	}
 }

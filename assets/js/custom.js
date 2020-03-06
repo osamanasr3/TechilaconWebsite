@@ -300,76 +300,111 @@
 })(jQuery);	 
 
 function submit_form() {
-    event.preventDefault();
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxsHWja2QzJCtQpR9LzWedX8Ld7XBcnAtyUppq9FWql5Lx3RQ/exec'
+    const form = document.forms['submit-to-google-sheet']
     var firstName = document.getElementById("firstName").value;
     var lastName = document.getElementById("lastName").value;
+    var mobile = document.getElementById("mobile").value;
     var email = document.getElementById("email").value;
-    var nationalID = document.getElementById("nationalID").value;
-    var phone = document.getElementById("phone").value;
-    var hackathon = document.getElementById("hackathon").checked;
-    var eventX = document.getElementById("eventX").checked;
-    if(validate(firstName,lastName,email,nationalID,phone)){
-        alert("Name : " + firstName + " " + lastName + " \nEmail : " + email +
-            "\nNational ID : " + nationalID + "\nPhone : " + phone +
-            "\nHackathon : " + hackathon + "\nEventX : " + eventX)
+    var message = document.getElementById("message").value;
+    var valid = validate(firstName,lastName,email,mobile,message);
+    if(valid){
+         // alert("Name : " + firstName + " " + lastName + " \nEmail : " + email +
+         //     "\nMobile : " + mobile + "\nMessage : " + message);
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(function(){alert('Message sent successfully! We\'ll be in touch soon')})
+        .catch(function(){alert('An error has occured. Please try again later')})
     }
+    event.preventDefault();
 } 
 
-function validate(firstName,lastName,email,nationalID,phone){
+function validate(firstName,lastName,email,phone,message){
     var emailPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     var phonePattern = /^(010|011|012)[0-9]{8}$/;
     var namePattern = /^[a-zA-Z]{0,15}$/;
     var nationalIDPattern = /^[0-9]{14}$/;
+    var firstnameinvalid = false;
+    var element;
+    var returnValue = true;
+    clearFormErrors();
 
-    if(checkEmpty(firstName,lastName,email,nationalID,phone)){
+    if(checkEmpty(firstName,lastName,email,phone,message)){
         return false;
     }
 
-    
     if(!(namePattern.test(firstName))){
-        alert("Invalid First Name Entered");
-        return false;
+        element = document.getElementById("error-name");
+        element.style.display = "block";
+        element.innerHTML = "&#10006 Invalid first name entered"
+        firstnameinvalid = true;
+        returnValue = false;
     }
     if(!(namePattern.test(lastName))){
-        alert("Invalid Last Naem Entered");
-        return false;
-    }
-    if(!(nationalIDPattern.test(nationalID))){
-        alert("Invalid National ID Entered");
-        return false;
+        element = document.getElementById("error-name");
+        element.style.display = "block";
+        if(firstnameinvalid){
+            element.innerHTML = "&#10006 Invalid first and last names entered"
+        }
+        else{
+            element.innerHTML = "&#10006 Invalid last name entered"
+        }
+        returnValue = false;
     }
     if(!(emailPattern.test(email))){
-        alert("Invalid Email Entered");
-        return false;
+        element = document.getElementById("error-email");
+        element.style.display = "block";
+        element.innerHTML = "&#10006 Invalid email entered"
+        returnValue = false;
     }
     if(!(phonePattern.test(phone))){
-        alert("Invalid Phone Number Entered");
-        return false;
+        element = document.getElementById("error-mobile");
+        element.style.display = "block";
+        element.innerHTML = "&#10006 Invalid mobile entered"
+        returnValue = false;
     }
-    return true
+    return returnValue;
 }
-function checkEmpty(firstName,lastName,email,nationalID,phone){
+function checkEmpty(firstName,lastName,email,phone,message){
+    var returnvalue = false;
+    var firstIsEmpty = false;
+    var element;
     if(firstName == ""){
-        alert("First Name is empty");
-        return true;
+        element = document.getElementById("error-name");
+        element.style.display = "block";
+        element.innerHTML = "&#10006 First Name is required"
+        firstIsEmpty = true;
+        returnvalue = true;
     }
     if(lastName == ""){
-        alert("Last Name is empty");
-        return true;
+        element = document.getElementById("error-name");
+        element.style.display = "block";
+        if(firstIsEmpty){
+            element.innerHTML = "&#10006 First and Last names are required"
+        }
+        else{
+            element.innerHTML = "&#10006 Last Name is required"
+        }
+        returnvalue = true;
     }
     if(email == ""){
-        alert("Email is empty");
-        return true;
-    }
-    if(nationalID == ""){
-        alert("National ID is empty");
-        return true;
+        element = document.getElementById("error-email");
+        element.style.display = "block";
+        element.innerHTML = "&#10006 Email is required"
+        returnvalue = true;
     }
     if(phone == ""){
-        alert("Phone Number is empty");
-        return true;
+        element = document.getElementById("error-mobile");
+        element.style.display = "block";
+        element.innerHTML = "&#10006 Mobile Number is required"
+        returnvalue = true;
     }
-    return false;
+    if(message.replace(/\s/g,'') == ""){
+        element = document.getElementById("error-message");
+        element.style.display = "block";
+        element.innerHTML = "&#10006 Message is required"
+        returnvalue = true;
+    }
+    return returnvalue;
 }
 function changeTickets(cb) 
 {
@@ -392,56 +427,64 @@ function changeTickets(cb)
         groupPro.style.display = "block";
     }
  }
- function submit_form() {
-    event.preventDefault();
-    var Name = document.getElementById("Name").value;
-    var Phone = document.getElementById("Mobile").value;
-    var Email = document.getElementById("Email").value;
-    var Looking_To = document.getElementById("Looking_To").value;
-    var Comment = document.getElementById("Comment").value;
-    if(validate(Name,Email,Phone)){
-        alert("Name : " + Name + " \nMobile : " + Phone +
-            "\nEmail : " + Email + "\nLooking_To : " + Looking_To +
-            "\nComment : " + Comment)
-    }
-} 
-function checkEmpty(Name,Email,Phone){
-    if(Name == ""){
-        alert("First Name is empty");
-        return true;
-    }
-    if(Email == ""){
-        alert("Email is empty");
-        return true;
-    }
-    if(Phone == ""){
-        alert("Phone Number is empty");
-        return true;
-    }
-    return false;
+
+function clearFormErrors(){
+    var element;
+    element = document.getElementById("error-name");
+    element.style.display = "None";
+    element = document.getElementById("error-email");
+    element.style.display = "None";
+    element = document.getElementById("error-mobile");
+    element.style.display = "None";
+    element = document.getElementById("error-message");
+    element.style.display = "None";
+
 }
-function validate(Name,Email,Phone){
+
+function submit_mail() {
+
+    event.preventDefault();
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxQ71AI1YFjBhrBRhCqjHzxHPIsRL3KQK5o43dyGB9sz76HTDI/exec'
+    const form = document.forms['submit-mail']
+    var email = document.getElementById("SignUpEmail").value;
     var emailPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    var phonePattern = /^(010|011|012)[0-9]{8}$/;
-    var namePattern = /^([a-zA-Z]| ){0,15}$/;
-    var nationalIDPattern = /^[0-9]{14}$/;
-
-    if(checkEmpty(Name,Email,Phone)){
-        return false;
-    }
-
     
-    if(!(namePattern.test(Name))){
-        alert("Invalid First Name Entered");
-        return false;
+    if(email == ""){
+        element = document.getElementById("newsletter_error");
+        element.style.display = "block";
+        element.innerHTML = "&#10006 Email is required";
+
+    } 
+    else if(!(emailPattern.test(email)))
+    {
+        element = document.getElementById("newsletter_error");
+        element.style.display = "block";
+        element.innerHTML = "&#10006 Invalid Email Entered";
     }
-    if(!(emailPattern.test(Email))){
-        alert("Invalid Email Entered");
-        return false;
+    else{
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(
+            function(){
+                element = document.getElementById("signup-hide");
+                element.style.display = "none";
+                element = document.getElementById("signup-complete");
+                element.style.display = "block";
+                //alert('Message sent successfully! We\'ll be in touch soon')
+            }
+        )
+        .catch(
+            function(){
+                alert('An error has occured. Please try again later')
+            }
+        )
     }
-    if(!(phonePattern.test(Phone))){
-        alert("Invalid Phone Number Entered");
-        return false;
-    }
-    return true
+
+
+}
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
 }

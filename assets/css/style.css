@@ -92,7 +92,8 @@ h1,h2,h3,h4,h5,h6{
     font-weight:700;
     color:#000;
     margin:0;
-    padding:0;font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif
+    padding:0;
+
 }
 h1{
     color:#fff;
@@ -384,7 +385,7 @@ header .menu-seven ul li a:focus,header .menu-seven ul li a:hover,header .menu-s
     position:absolute;
     left:0;
     bottom:70px;
-    z-index:99
+    z-index:99;
 }
 .banner .content-left span{
     font-size:300px;
@@ -420,7 +421,7 @@ header .menu-seven ul li a:focus,header .menu-seven ul li a:hover,header .menu-s
     position:absolute;
     right:0;
     bottom:21px;
-    z-index:99
+    z-index:99;
 }
 .banner .content-right:before{
     content:"";
@@ -786,7 +787,7 @@ header .menu-seven ul li a:focus,header .menu-seven ul li a:hover,header .menu-s
 .banner-nine .topbanner .menu{
     float:right;
     height:100%;
-    z-index: 999;
+    z-index: 30;
     margin-top:3%;
     margin-right:50px;
     /*border: 4px solid #ff0000;*/
@@ -942,15 +943,18 @@ header .menu-seven ul li a:focus,header .menu-seven ul li a:hover,header .menu-s
     float:left;
 }
 .services .service-item h3{
-    font-weight:lighter;
+    font-weight:normal;
     font-size:25px;
     margin-bottom:20px;
+    color:#333333;
 
 }
 .services .service-item .service-item-text{
     margin-left:20px;
     margin-right:20px;
-    font-weight:lighter;
+    font-weight:normal;
+    font-size:17px;
+    color:#333333!important;
 }
 .services img{
     display: block;
@@ -1031,6 +1035,7 @@ header .menu-seven ul li a:focus,header .menu-seven ul li a:hover,header .menu-s
 }
 .signup form{
     width:100%;
+    /*border:6px solid #FF0000;*/
 }
 .signup form input[type=text]{
     /*border:6px solid #65ac4c*/
@@ -1048,6 +1053,49 @@ header .menu-seven ul li a:focus,header .menu-seven ul li a:hover,header .menu-s
     margin-top:30px;
 }
 
+.signup form p{
+    /*float:left;*/
+    border:6px solid #65ac4c;
+    width:250px;
+    padding: 20px 0px 20px 20px;
+    margin-left:10px;
+    margin-top:10px;
+}
+
+.signup .signup-hide{
+    display:block;
+}
+.signup .signup-complete{
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    display:none;
+    width:100%;
+    height:100%;
+    margin:0 auto;
+    text-align:center;
+    /*float:right;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;*/
+}
+.signup .signup-complete p{
+    font-size:20px;
+    /*font-size:20px;*/
+}
+.signup .center{
+    border:3px solid green;
+}
+.signup .newsletter_error{
+    padding-left:10px;
+    padding-right:10px;
+    text-align:center;
+    width:max-content;
+    margin:0 auto;
+    color:white!important;
+    background:#CC3B3B;
+    border-radius:2px;
+    display:none;
+    /*border:2px solid red;*/
+}
 
 
 .poweredby{
@@ -1056,11 +1104,13 @@ header .menu-seven ul li a:focus,header .menu-seven ul li a:hover,header .menu-s
     height:0%;
 }
 .poweredby p{
+        font-family: Open Sans;
     padding-left:10px;
     padding-top:20px;
     padding-right:10px;
     color:#FFFFFF;
-    font-weight:bolder;
+    font-weight:900;
+    -webkit-font-smoothing: antialiased;
     letter-spacing: .02em;
     line-height: 1.8;
     font-size:18px;
@@ -1089,7 +1139,6 @@ header .menu-seven ul li a:focus,header .menu-seven ul li a:hover,header .menu-s
     margin-bottom:0px;
     margin-top:10px;
     width:100%;
-    min-width:200px;
 }
 .poweredby .service-item img{
     width:300px;
@@ -1316,7 +1365,6 @@ header .menu-seven ul li a:focus,header .menu-seven ul li a:hover,header .menu-s
 }
 .sponsor{
     background-color:#ffffff;
-    overflow:hidden;
     text-align:center;
     margin-bottom:100px;
 }
@@ -1361,7 +1409,7 @@ header .menu-seven ul li a:focus,header .menu-seven ul li a:hover,header .menu-s
     margin-bottom: 10px;
 }
 
-.sponsor .sponsor-join-button p{
+.sponsor a{
     padding:20px 10px 20px 10px;
     color:white;
     background-color:#FD7359;
@@ -1369,7 +1417,8 @@ header .menu-seven ul li a:focus,header .menu-seven ul li a:hover,header .menu-s
     margin:0 auto;
     border-radius: 5px;
     font-weight:bold;
-    border: 2px solid #FD7359;
+    padding:20px 10px 20px 10px;
+    z-index:20;
 }
 
 
@@ -1866,6 +1915,9 @@ footer .copyright{
     float:left;
     text-align:center;
 }
+footer{
+    margin-bottom:50px;
+}
 footer .logos{
     /*border-bottom: 4px solid #0000ff;*/
     width:34%;
@@ -1876,6 +1928,12 @@ footer .contactmail{
     width:33%;
     float:right;
     text-align:center;
+}
+
+footer .contactmail a{
+    color:#FD7359!important;
+    font-size:20px;
+    text-decoration:underline;
 }
 
 footer.footer-three{
@@ -2146,7 +2204,7 @@ div#bs-example-navbar-collapse-1{
     height:100%;
     opacity:0;
     visibility:hidden;
-    z-index:9999;
+    z-index:0;
     background-color:#62a0d1;
     -webkit-transition:all .3s ease;
     -moz-transition:all .3s ease;
@@ -2206,7 +2264,7 @@ div#bs-example-navbar-collapse-1{
     top:20px;
     color:#62a0d1;
     font-size:30px;
-    z-index:999;
+    z-index:2;
     opacity:1;
     background:#fff;
     border-radius:50%;
@@ -2341,7 +2399,7 @@ div#bs-example-navbar-collapse-1{
     top:0;
     left:0;
     right:0;
-    z-index:999
+    z-index:30
 }
 .header-9 .main-menu{
     background-color:transparent;
@@ -2693,3 +2751,31 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+.error{
+    font-size:14px!important;
+    color:white!important;
+    background:#CC3B3B;
+    border-radius:2px;
+    font-size:2px;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:5px;
+    padding-right:5px;
+    display:none;
+    transition: all 2s linear;
+}
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
