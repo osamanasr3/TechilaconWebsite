@@ -10,12 +10,11 @@
     <title>Join Techila Con | 12-13 June @ TGC Egypt</title>
 
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KFWP9ZL');</script>
-<!-- End Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KFWP9ZL');</script>
+    <!-- End Google Tag Manager -->
 
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
     <!-- Google Fonts -->
@@ -48,8 +47,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- banner-bg -->
     <link href="assets/css/banner-bg.css" rel="stylesheet">
 
-
-
     <!-- Style -->
     <link href="assets/css/style.css" rel="stylesheet">
 
@@ -64,21 +61,48 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     <div class="box-layout">
 
-        <section class="banner banner-nine">
-            <div class="topbanner">
-                <img src="images/techila_white.png">
-                <div class="menu">
-                    <ul>
-                        <li><a href="#" class="page-scroll">Home</a></li>
-                        <li><a href="#" class="page-scroll">Line Up</a></li>
+
+        <section class="banner banner-nine" id="top">
+
+                <div class="mobile-menu-area">
+                  <div class="close">
+                    <i class="fa fa-close"></i>
+                  </div>
+                  <div class="mobile-menu">
+                    <ul class="m-menu">
+                      <li><a href="#top" class="page-scroll">Home</a></li>
+                      <!--<li><a href="#top" class="page-scroll" disabled>Line up</a></li>-->
+                      <li><a href="#GetOnTechila" class="page-scroll">Contact</a></li>
+                    </ul>
+                  </div>
+                  <div class="ms-btn-group">
+                    <a href="#signup" class="ms-btn page-scroll">Join</a>
+                  </div>
+                </div>
+          <nav class="main-menu menu-six menu-fixed">
+          <div class="topbanner container">
+            <div class="navbar-header">
+                <a class="navbar-brand noselect" href="#top"><img src="images/techila_white.png" alt="logo" class="img-responsive nav-img"></a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="background: #e84b3a;">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+            </div>
+                <div class="menu collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#top" class="page-scroll">Home</a></li>
+                        <!--<li><a href="" class="page-scroll" disabled>Line Up</a></li>-->
                         <li><a href="#GetOnTechila" class="page-scroll">Contact</a></li>
-                        <li><a href="#signup" class="page-scroll">JOIN</a></li>
+                        <li><a href="#signup" class="page-scroll noselect">JOIN</a></li>
                     </ul>
                 </div>
             </div>
+          </nav>
+
             <h1>COMING SOON.</h1>
             <video id="bg" src="media/tgc.mp4" autoplay="true" loop="true" muted="true"></video>
-
         </section>
 
             <!-- Video ends here-->
@@ -191,7 +215,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="section-header text-center">
                 <h1>KNOW WHEN WE'RE LIVE.</h1>
                 <p>Signup with your email and be the first to buy early bird tickets with discounts. Those who signup automatically get a promocode to use.<br> Are you ready for #Techila?</p>
-                <p class="newsletter_error" id="newsletter_error">&#10006 Error</p>
+                <p class="newsletter_error" id="newsletter_error">&10006 Error</p>
                 <form action="/" name="submit-mail">
                     <input type="text" name="First Name" id="FirstName" placeholder="First Name">
                     <input type="text" name="Last Name" id="LastName" placeholder="Last Name">
@@ -217,44 +241,46 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="right-half">
                     <form action="/" name="submit-to-google-sheet">
                         <p class="form-input-title">Name*</p>
-                        <p class="error" id="error-name">&#10006 Error</p>
+                        <p class="error" id="error-name">&10006 Error</p>
                         <p class="form-input-title"></p>
 
                         <div class="firstName">
-                            <input type="text" name="First Name" id="firstName">
+                            <input type="text" name="First Name" id="firstName" autocomplete="cc-name" class="form-control">
                             <p>First Name</p>
                         </div>
                         <div class="lastName">
-                            <input type="text" name="Last Name" id="lastName">
+                            <input type="text" name="Last Name" id="lastName"  autocomplete="cc-family-name" class="form-control">
                             <p>Last Name</p>
                         </div>
 
                         <p class="form-input-title">Mobile Number*<br></p>
-                        <p class="error" id="error-mobile">&#10006 Error</p>
+                        <p class="error" id="error-mobile">&10006 Error</p>
                         <p class="form-input-title"></p>
-
                         <p class="form-input-title-desc">Please interest a number we can reach you on.</p>
-                        <input type="text" name="mobile" id="mobile">
+                        <input type="text" name="mobile" id="mobile" autocomplete="tel" class="form-control">
+
                         <p class="form-input-title">Email*<br></p>
-                        <p class="error" id="error-email">&#10006 Error</p>
+                        <p class="error" id="error-email">&10006 Error</p>
                         <p class="form-input-title"></p>
                         <p class="form-input-title-desc">Please interest an email we can reach you on.</p>
-                        <input type="text" name="email" id="email">
+                        <input type="text" name="email" id="email"  autocomplete="email" class="form-control">
+
+
                         <p class="form-input-title">I am interested in becoming a: *</p>
-                        <select name="Role" id="Role">
+                        <select name="Role" id="Role" value="Sponsor" class="form-control">
                             <option value="Sponsor">Sponsor</option>
                             <option value="Startup">Joining as a Startup</option>
                             <option value="Media">Media Partner</option>
                             <option value="Community">Community Partner</option>
                             <option value="Other">Other</option>
                         </select>
-                        <p class="form-input-title"></p>
-                        <p class="error" id="error-message">&#10006 Error</p>
-                        <p class="form-input-title">Message *</p>
-                ​        <textarea id="message" name="Message" rows="5"></textarea>
-                        <!-- <div class="loader"></div>  -->
-                        <input type="submit" name="send" value="send" onclick="submit_form()">
 
+                        <p class="form-input-title"></p>
+                        <p class="error" id="error-message">&10006 Error</p>
+                        <p class="form-input-title">Message *</p>
+                ​        <textarea id="message" name="Message" rows="5" class="form-control"></textarea>
+                        <!-- <div class="loader"></div>  -->
+                        <button type="submit" name="send" value="send" onclick="submit_form()" class="btn btn-lg btn-send">send</button>
                     </form>
                 </div>
             </div>
@@ -449,10 +475,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <footer>
                 <div class="copyright">
-                    <a>©Techila Con, powered by Startups Galaxy & Code Geist.</a>
+                    ©Techila Con, powered by Startups Galaxy & Code Geist.
                 </div>
-                <div class=logos>
-                    <img></img>
+                <div class="event-social">
+                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <!--<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>-->
+                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <!--<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>-->
+                  <!--<li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>-->
+                  <!--<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>-->
+                </ul>
                 </div>
                 <div class="contactmail">
                     <a href="mailto:hi@techilacon.com?subject=Hey There Techila Con">hi@techilacon.com</a>
@@ -510,7 +542,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- Custom -->
     <script src="assets/js/custom.js"></script>
 
-    <script type="text/javascript">
+    <!--<script type="text/javascript">
         //Home Page map
         var styleArray = [{
             "featureType": "water",
@@ -595,7 +627,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               // If the count down is finished, write some text
         }, 1000);
 </script>
-
+-->
 
 
 </body>

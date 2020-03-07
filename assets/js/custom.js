@@ -9,41 +9,41 @@
     var fixed_top_seven = $(".menu-seven");
 
     $(window).on('scroll', function(){
-        if( $(this).scrollTop() > 100 ){  
+        if( $(this).scrollTop() > 100 ){
             fixed_top.addClass("animated fadeInDown");
         }
         else{
             fixed_top.removeClass("animated fadeInDown");
         }
-	  
-        if( $(this).scrollTop() > 100 ){  
+
+        if( $(this).scrollTop() > 100 ){
             fixed_top_two.addClass("menu-two-bg");
         }
         else{
             fixed_top_two.removeClass("menu-two-bg");
         }
-	  
-        if( $(this).scrollTop() > 100 ){  
+
+        if( $(this).scrollTop() > 100 ){
             fixed_top_four.addClass("menu-four-bg");
         }
         else{
             fixed_top_four.removeClass("menu-four-bg");
         }
-    
-        if( $(this).scrollTop() > 100 ){  
+
+        if( $(this).scrollTop() > 100 ){
             fixed_top_five.addClass("menu-five-bg");
         }
         else{
             fixed_top_five.removeClass("menu-five-bg");
         }
-    
-        if( $(this).scrollTop() > 100 ){  
+
+        if( $(this).scrollTop() > 100 ){
             fixed_top_six.addClass("menu-six-bg");
         }
         else{
             fixed_top_six.removeClass("menu-six-bg");
         }
-        if( $(this).scrollTop() > 100 ){  
+        if( $(this).scrollTop() > 100 ){
             fixed_top_seven.addClass("menu-seven-bg");
         }
         else{
@@ -51,7 +51,7 @@
         }
     });
 
-    //js code for mobile menu 
+    //js code for mobile menu
     $('.navbar-toggle').on('click', function(e) {
         $('body').toggleClass('open-mobile-menu')
     });
@@ -73,8 +73,9 @@
             element.siblings('li').removeClass('open');
             element.siblings('li').find('li').removeClass('open');
             element.siblings('li').find('ul').slideUp(1500,"swing");
+            $('body').removeClass('open-mobile-menu');
         }
-    }); 
+    });
 
     //jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').on('click', function(event) {
@@ -86,13 +87,13 @@
     });
 
 
-      
+
     $('#countdown').countdown({
         date: '10/22/2020 17:00:00',
         offset: +2,
         day: 'Day',
         days: 'Days'
-    }, 
+    },
     function () {
         // alert('Done!');
     });
@@ -115,14 +116,14 @@
                $this.text(this.countNum);
                //alert('finished');
             }
-        });  
+        });
     });
 
 
 	//Product list grid view
 	var list = $("#list");
 	var grid = $("#grid");
-	list.on('click', function(){    
+	list.on('click', function(){
 	    $('.product-item-grid').animate({opacity:0},function(){
 		    $('.grid').removeClass('grid-active');
 		    $('.list').addClass('list-active');
@@ -131,7 +132,7 @@
 	    });
 	});
 
-	grid.on('click', function(){  
+	grid.on('click', function(){
 	    $('.product-item-list').animate({opacity:0},function(){
 		    $('.list').removeClass('list-active');
 		    $('.grid').addClass('grid-active');
@@ -152,7 +153,7 @@
 
 
     //masonery
-    jQuery(window).load(function() {	
+    jQuery(window).load(function() {
        $('.grid').masonry({
 	       // set itemSelector so .grid-sizer is not used in layout
 	       itemSelector: '.grid-item',
@@ -270,7 +271,7 @@
 
 	$('.parallax-one').parallax({imageSrc: 'images/11-04-19/paralax2.png'});
     $('.parallax-two').parallax({imageSrc: 'images/11-04-19/paralax.png'});
-   
+
    // sticky-widget
    $(document).ready(function() {
       $('section .container .sticky-widget').theiaStickySidebar();
@@ -297,7 +298,7 @@
         },
     });
 
-})(jQuery);	 
+})(jQuery);
 
 function submit_form() {
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxsHWja2QzJCtQpR9LzWedX8Ld7XBcnAtyUppq9FWql5Lx3RQ/exec'
@@ -316,7 +317,7 @@ function submit_form() {
         .catch(function(){alert('An error has occured. Please try again later')})
     }
     event.preventDefault();
-} 
+}
 
 function validate(firstName,lastName,email,phone,message){
     var emailPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -406,7 +407,7 @@ function checkEmpty(firstName,lastName,email,phone,message){
     }
     return returnvalue;
 }
-function changeTickets(cb) 
+function changeTickets(cb)
 {
     var singleBasic = document.getElementById("SingleBasic");
     var singlePro = document.getElementById("SinglePro");
@@ -448,13 +449,13 @@ function submit_mail() {
     const form = document.forms['submit-mail']
     var email = document.getElementById("SignUpEmail").value;
     var emailPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    
+
     if(email == ""){
         element = document.getElementById("newsletter_error");
         element.style.display = "block";
         element.innerHTML = "&#10006 Email is required";
 
-    } 
+    }
     else if(!(emailPattern.test(email)))
     {
         element = document.getElementById("newsletter_error");

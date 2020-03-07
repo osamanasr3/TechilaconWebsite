@@ -452,6 +452,13 @@
 }
 
 @media only screen and (max-width:767px){
+
+			img.nav-img{
+					width: 120px;
+					margin-top: 0;
+					margin-left: 0;
+			}
+
 	body{
     font-family:Poppins,sans-serif;
     font-size:15px;
@@ -459,7 +466,7 @@
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 	}
 }
 	header .main-menu .navbar-toggle{
@@ -555,14 +562,15 @@
 }
 	.banner.home-13 .seven-content-left .content h2 img{
 		display:none
-} 
-	
+}
+
 
 
 }
 
 
 @media only screen and (min-width: 100px) and (max-width:680px){
+
 	.banner .content-right:before{
 		height:80px
 }
@@ -785,7 +793,8 @@
 	.signup form input[type=submit]{
 	    /*border:6px solid #65ac4c*/
 	    width:120px;
-		margin: 20px 0px 0px 0px;
+		display: block;
+    margin: 10px auto;
 	}
 	.signup .text-center{
 		padding: 0px 0px 0px 0px;
@@ -845,9 +854,9 @@
 	.banner-nine h1{
     	font-size:35px;
 	}
-	.mobile-menu-area{
+	..mobile-menu-area-menu-area{
 		display:block;
-		border: 50px solid red;
+		border: 20px solid transparent;
 	}
 	.pricing {
 		padding: 0px 0px 0px 0px;
