@@ -217,9 +217,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p>Signup with your email and be the first to buy early bird tickets with discounts. Those who signup automatically get a promocode to use.<br> Are you ready for #Techila?</p>
                 <p class="newsletter_error" id="newsletter_error">&10006 Error</p>
                 <form action="/" name="submit-mail">
-                    <input type="text" name="First Name" id="FirstName" placeholder="First Name">
-                    <input type="text" name="Last Name" id="LastName" placeholder="Last Name">
-                    <input type="text" name="Email" id="SignUpEmail" placeholder="Email Address">
+                    <input type="text" name="First Name" id="FirstName" placeholder="First Name" required autocomplete="given-name">
+                    <input type="text" name="Last Name" id="LastName" placeholder="Last Name" required autocomplete="family-name">
+                    <input type="text" name="Email" id="SignUpEmail" placeholder="Email Address" required autocomplete="email">
                     <input type="submit" name="SignUp" value="Sign Up" onclick="submit_mail()">
                 </form>
             </div>
@@ -232,12 +232,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <section class="newsletter" id="GetOnTechila">
             <div class="container">
+
                 <div class="left-half">
                     <h1>Get on Techila Con!</h1>
                     <p>Want to become part of Techila Con?<br>Send us your message and we’ll get in touch.</p>
                     <img src="images/techilacon_no_background.png" alt="logo" class="hideableimage">
-
                 </div>
+
                 <div class="right-half">
                     <form action="/" name="submit-to-google-sheet">
                         <p class="form-input-title">Name*</p>
@@ -245,11 +246,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <p class="form-input-title"></p>
 
                         <div class="firstName">
-                            <input type="text" name="First Name" id="firstName" autocomplete="cc-name" class="form-control">
+                            <input type="text" name="First Name" id="firstName" autocomplete="given-name" class="form-control" required>
                             <p>First Name</p>
                         </div>
                         <div class="lastName">
-                            <input type="text" name="Last Name" id="lastName"  autocomplete="cc-family-name" class="form-control">
+                            <input type="text" name="Last Name" id="lastName"  autocomplete="family-name" class="form-control" required>
                             <p>Last Name</p>
                         </div>
 
@@ -257,16 +258,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <p class="error" id="error-mobile">&10006 Error</p>
                         <p class="form-input-title"></p>
                         <p class="form-input-title-desc">Please interest a number we can reach you on.</p>
-                        <input type="text" name="mobile" id="mobile" autocomplete="tel" class="form-control">
+                        <input type="text" name="mobile" id="mobile" autocomplete="tel-national" class="form-control" required>
 
                         <p class="form-input-title">Email*<br></p>
                         <p class="error" id="error-email">&10006 Error</p>
                         <p class="form-input-title"></p>
                         <p class="form-input-title-desc">Please interest an email we can reach you on.</p>
-                        <input type="text" name="email" id="email"  autocomplete="email" class="form-control">
+                        <input type="text" name="email" id="email"  autocomplete="email" class="form-control" required>
 
-
-                        <p class="form-input-title">I am interested in becoming a: *</p>
+                        <p class="form-input-title">I am interested in becoming a:*</p>
                         <select name="Role" id="Role" value="Sponsor" class="form-control">
                             <option value="Sponsor">Sponsor</option>
                             <option value="Startup">Joining as a Startup</option>
@@ -478,9 +478,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     ©Techila Con, powered by Startups Galaxy & Code Geist.
                 </div>
                 <div class="event-social">
-                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="https://facebook.com/events/s/techila-con/1039558896399745/?ti=icl" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                   <!--<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>-->
-                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href="https://instagram.com/techilacon?igshid=myll4e4ujm9r" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                   <!--<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>-->
                   <!--<li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>-->
                   <!--<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>-->
