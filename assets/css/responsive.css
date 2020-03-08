@@ -872,4 +872,13 @@
 		width:100%;
 	    color:#FD7359;
 	}
+
+	.navbar-header{
+	    width:100%;
+	}
+	.navbar-header a{
+		/*border:2px solid red;*/
+		padding-left:0px;
+		padding-right:0px;
+	}
 }

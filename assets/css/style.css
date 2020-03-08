@@ -928,6 +928,7 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
   background: rgba(0, 0, 0,0.1);
   border: 0;
   z-index: 6;
+
 }
 
 .menu-six-bg .topbanner{
@@ -946,6 +947,7 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
 .topbanner .menu{
     float:right;
     height:100%;
+    width:70%;
     z-index: 30;
     margin-top: 10px;
     margin-right:50px;
@@ -2499,7 +2501,7 @@ div#bs-example-navbar-collapse-1 {
 }
 .open-mobile-menu .ms-btn-group {
     bottom: 0;
-    -webkit-transition-delay: 1s;
+    -webkit-transition-delay: 0.3s;
 }
 .ms-btn-group .ms-btn {
     display: inline-block;
