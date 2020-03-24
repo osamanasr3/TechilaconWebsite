@@ -407,25 +407,24 @@ function checkEmpty(firstName,lastName,email,phone,message){
     }
     return returnvalue;
 }
-function changeTickets(cb)
+function changeTickets()
 {
-    var singleBasic = document.getElementById("SingleBasic");
-    var singlePro = document.getElementById("SinglePro");
-    var groupBasic = document.getElementById("GroupBasic");
-    var groupPro = document.getElementById("GroupPro");
-    if(cb.checked == 0)
+    var cb  = document.querySelector(".cb");
+    var individualTickets = document.querySelector(".individual-tickets");
+    var groupTickets = document.querySelector(".group-tickets");
+    var title = document.querySelector(".tickets-title");
+
+    if(cb.checked == 1)
     {
-        singleBasic.style.display = "block";
-        singlePro.style.display = "block";
-        groupBasic.style.display = "none";
-        groupPro.style.display = "none";
+        title.innerHTML = "<h3>Event <span class='selected'> Group </span> Tickets</h3>";
+        individualTickets.classList.add('hidden');
+        groupTickets.classList.remove('hidden');
     }
-    else if(cb.checked == 1)
+    else if(cb.checked == 0)
     {
-        singleBasic.style.display = "none";
-        singlePro.style.display = "none";
-        groupBasic.style.display = "block";
-        groupPro.style.display = "block";
+        title.innerHTML = "<h3>Event <span class='selected'> Individual </span> Tickets</h3>";
+        individualTickets.classList.remove('hidden');
+        groupTickets.classList.add('hidden');
     }
  }
 

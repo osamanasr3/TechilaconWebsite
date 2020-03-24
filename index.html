@@ -286,156 +286,127 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </section>
 
+        <!-- Pricing start here -->
+        <section class="pricing">
+            <div class="overlay">
+                <div class="container">
 
-    <!-- <section class="pricing padding-120" id="pricing">
-            <div class="container">
-               <div class="row">
-                  <div class="section-header">
-                     <h2>event tickets Plan</h2>
-                  </div>
-                  <div class="PricingTiming">
-                    <a>Early</a>
-                    <a> | </a>
-                    <a>Normal</a>
-                    <a> | </a>
-                    <a>Late</a>
-                  </div>
-                  <div class="sliderSwitch">
-                    <div class="slidegroup">
-                     <a>Single</a>
-                     <label class="switch">
-                       <input type="checkbox" onclick='changeTickets(this)''>
-                       <span class="slider round"></span>
-                     </label>
-                     <a>Group</a>
-                     </div>
+                  <div class="section-header text-center tickets-title">
+                    <h3>Event <span class='selected'> Individual </span> Tickets</h3>
                   </div>
 
-                  <div class="section-wrapper">
-                     <div class="row">
-                        <div class="col-md-12 col-sm-6 col-xs-12">
-                           <div class="pricing-item" id="SingleBasic">
-                              <div class="pricing-all">
-                                 <div class="pricing-title">
-                                    <h5>Single Basic Ticket</h5>
-                                 </div>
-                                 <div class="pricing-content">
-                                    <ul>
-                                       <li>Conference Tickets</li>
-                                       <li>Free Lunch And Coffee</li>
-                                       <li>Free Event T-shirt</li>
-                                       <li class="close-offer">Add Speakers Twogather</li>
-                                       <li class="close-offer">Add Speakers Dinner</li>
-                                       <li class="close-offer">Enjoy Night Music</li>
-                                    </ul>
-                                 </div>
-                                 <div class="pricing-thumb">
-                                    <img src="images/11-04-19/pricing/pricing1.png" alt="pricing">
-                                 </div>
-                              </div>
-                              <div class="pricing-button">
-                                 <div class="price">
-                                    <span>$100</span>
-                                    <a href="#">get tickets!</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-md-12 col-sm-6 col-xs-12">
-                           <div class="pricing-item" id="SinglePro">
-
-                              <div class="pricing-all">
-                                 <div class="pricing-title">
-                                    <h5>Single Pro Ticket</h5>
-                                 </div>
-                                 <div class="pricing-content">
-                                    <ul>
-                                       <li>Conference Tickets</li>
-                                       <li>Free Lunch And Coffee</li>
-                                       <li>Free Event T-shirt</li>
-                                       <li class="close-offer">Add Speakers Twogather</li>
-                                       <li class="close-offer">Add Speakers Dinner</li>
-                                       <li class="close-offer">Enjoy Night Music</li>
-                                    </ul>
-                                 </div>
-                                 <div class="pricing-thumb">
-                                    <img src="images/11-04-19/pricing/pricing1.png" alt="pricing">
-                                 </div>
-                              </div>
-                              <div class="pricing-button">
-                                 <div class="price">
-                                    <span>$100</span>
-                                    <a href="#">get tickets!</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-md-12 col-sm-6 col-xs-12">
-                           <div class="pricing-item" id="GroupBasic" style="display:none">
-
-                              <div class="pricing-all">
-                                 <div class="pricing-title">
-                                    <h5>Group Basic Ticket</h5>
-                                 </div>
-                                 <div class="pricing-content">
-                                    <ul>
-                                       <li>Conference Tickets</li>
-                                       <li>Free Lunch And Coffee</li>
-                                       <li>Free Event T-shirt</li>
-                                       <li class="close-offer">Add Speakers Twogather</li>
-                                       <li class="close-offer">Add Speakers Dinner</li>
-                                       <li class="close-offer">Enjoy Night Music</li>
-                                    </ul>
-                                 </div>
-                                 <div class="pricing-thumb">
-                                    <img src="images/11-04-19/pricing/pricing1.png" alt="pricing">
-                                 </div>
-                              </div>
-                              <div class="pricing-button">
-                                 <div class="price">
-                                    <span>$100</span>
-                                    <a href="#">get tickets!</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-md-12 col-sm-6 col-xs-12">
-                           <div class="pricing-item" id="GroupPro" style="display:none">
-
-                              <div class="pricing-all">
-                                 <div class="pricing-title">
-                                    <h5>Group Pro Ticket</h5>
-                                 </div>
-                                 <div class="pricing-content">
-                                    <ul>
-                                       <li>Conference Tickets</li>
-                                       <li>Free Lunch And Coffee</li>
-                                       <li>Free Event T-shirt</li>
-                                       <li class="close-offer">Add Speakers Twogather</li>
-                                       <li class="close-offer">Add Speakers Dinner</li>
-                                       <li class="close-offer">Enjoy Night Music</li>
-                                    </ul>
-                                 </div>
-                                 <div class="pricing-thumb">
-                                    <img src="images/11-04-19/pricing/pricing1.png" alt="pricing">
-                                 </div>
-                              </div>
-                              <div class="pricing-button">
-                                 <div class="price">
-                                    <span>$100</span>
-                                    <a href="#">get tickets!</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+                  <div class="row text-center sliderRow">
+                    <label class="switch">
+                      <input type="checkbox" onclick='changeTickets()' class="cb">
+                      <span class="slider round"></span>
+                    </label>
+                    <p class="note"> <sub>* Slide for group</sub> </p>
                   </div>
-               </div>
+
+                    <div class="pricing-items">
+                        <div class="row individual-tickets center-flex">
+                            <div class="col-md-5 col-sm-6 col-xs-12">
+                                <div class="pricing-item first">
+                                    <div class="pricing-header">
+                                        <h3 class="name">Early</h3>
+                                        <h2 class="amount"><sup>$</sup>100</h2>
+                                    </div>
+                                    <!-- pricing-header -->
+                                    <div class="pricing-options">
+                                        <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Conference Tickets</p>
+                                        <p><span class="off"><i class="fa fa-times" aria-hidden="true"></i></span>Certificate</p>
+                                        <p><span class="off"><i class="fa fa-times" aria-hidden="true"></i></span>More Options</p>
+                                        <p><span class="off"><i class="fa fa-times" aria-hidden="true"></i></span>Printed Metarials</p>
+                                        <p><span class="off"><i class="fa fa-times" aria-hidden="true"></i></span>More Options</p>
+                                    </div>
+                                    <!-- pricing-options -->
+
+                                    <div class="pricing-button">
+                                        <a href="#">ticket now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-sm-6 col-xs-12">
+                                <div class="pricing-item off">
+                                    <div class="pricing-header">
+                                        <h3 class="name">Late</h3>
+                                        <h2 class="amount"><sup>$</sup>250</h2>
+                                    </div>
+                                    <!-- pricing-header -->
+                                    <div class="pricing-options">
+
+                                          <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Conference Tickets</p>
+                                          <p><span class="off"><i class="fa fa-times" aria-hidden="true"></i></span>Certificate</p>
+                                          <p><span class="off"><i class="fa fa-times" aria-hidden="true"></i></span>More Options</p>
+                                          <p><span class="off"><i class="fa fa-times" aria-hidden="true"></i></span>Printed Metarials</p>
+                                          <p><span class="off"><i class="fa fa-times" aria-hidden="true"></i></span>More Options</p>
+                                    </div>
+                                    <!-- pricing-options -->
+
+                                    <div class="pricing-button">
+                                        <a disabled>ticket now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row -->
+                        <div class="row group-tickets center-flex hidden">
+                          <div class="col-md-5 col-sm-6 col-xs-12">
+                              <div class="pricing-item first">
+                                  <div class="pricing-header">
+                                      <h3 class="name">Early</h3>
+                                      <h2 class="amount"><sup>$</sup>500</h2>
+                                  </div>
+                                  <!-- pricing-header -->
+                                  <div class="pricing-options">
+                                      <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Conference Tickets</p>
+                                      <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Certificate</p>
+                                      <p><span class="off"><i class="fa fa-times" aria-hidden="true"></i></span>More Options</p>
+                                      <p><span class="off"><i class="fa fa-times" aria-hidden="true"></i></span>Printed Metarials</p>
+                                      <p><span class="off"><i class="fa fa-times" aria-hidden="true"></i></span>More Options</p>
+                                  </div>
+                                  <!-- pricing-options -->
+
+                                  <div class="pricing-button first">
+                                      <a href="#">ticket now</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-5 col-sm-6 col-xs-12">
+                              <div class="pricing-item off">
+                                  <div class="pricing-header">
+                                      <h3 class="name">Late</h3>
+                                      <h2 class="amount"><sup>$</sup>700</h2>
+                                  </div>
+                                  <!-- pricing-header -->
+                                  <div class="pricing-options">
+                                      <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Conference Tickets</p>
+                                      <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Certificate</p>
+                                      <p><span class="off"><i class="fa fa-times" aria-hidden="true"></i></span>More Options</p>
+                                      <p><span class="off"><i class="fa fa-times" aria-hidden="true"></i></span>Printed Metarials</p>
+                                      <p><span class="off"><i class="fa fa-times" aria-hidden="true"></i></span>More Options</p>
+                                  </div>
+                                  <!-- pricing-options -->
+
+                                  <div class="pricing-button third">
+                                      <a disabled>ticket now</a>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- pricing items -->
+
+                </div>
+                <!-- container -->
             </div>
-    </section> -->
+            <!-- overlay -->
+        </section>
+        <!-- pricing -->
+        <!-- Pricing end here -->
 
 
-        <section class="sponsor">
+         <section class="sponsor">
             <div class="section-header text-center">
                 <h3>MAIN PARTNERS</h3>
             </div>
@@ -474,9 +445,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div id="contactanchor"></div>
 
             <footer>
-                <div class="copyright">
-                    ©Techila Con, powered by Startups Galaxy & Code Geist.
-                </div>
+
+              <div class="contactmail">
+                  <a href="mailto:hi@techilacon.com?subject=Hey There Techila Con">hi@techilacon.com</a>
+              </div>
                 <div class="event-social">
                   <li><a href="https://facebook.com/events/s/techila-con/1039558896399745/?ti=icl" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                   <!--<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>-->
@@ -485,9 +457,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <!--<li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>-->
                   <!--<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>-->
                 </ul>
-                </div>
-                <div class="contactmail">
-                    <a href="mailto:hi@techilacon.com?subject=Hey There Techila Con">hi@techilacon.com</a>
+              </div>
+                <div class="copyright">
+                    ©Techila Con, powered by Startups Galaxy & Code Geist.
                 </div>
             </footer>
 
