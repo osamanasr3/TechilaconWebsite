@@ -841,12 +841,12 @@
 	.sponsor .sponsor-join-button p{
 	    padding:20px 10px 20px 10px;
 	    color:white;
-	    background-color:#FD7359;
+	    background-color:#1f9cbe;
 	    width:80%;
 	    margin:0 auto;
 	    border-radius: 5px;
 	    font-weight:normal;
-	    border: 2px solid #FD7359;
+	    border: 2px solid #1f9cbe;
 	}
 	.banner-nine video{
 	    position:static;
@@ -870,7 +870,7 @@
 	}
 	footer .contactmail{
 		width:100%;
-	    color:#FD7359;
+	    color:#1f9cbe;
 	}
 
 	.navbar-header{
