@@ -243,7 +243,7 @@ input[type=button],input[type=button][disabled]:focus,input[type=button][disable
     background-color:#cb2027
 }
 .event-social li:last-child a{
-    background-color:#1f9cbe
+    background-color:#e84b3a
 }
 /*	02	- Header
 ----------------------------------------------*/
@@ -464,14 +464,14 @@ header .menu-six-bg{
     background-color: #000;
 }
 header .menu-six ul li ul li > a:hover, header .menu-six ul li ul li > a:focus, header .menu-six ul li ul li.active > a, header .menu-six ul li ul li.active > a:hover{
-    color: #1f9cbe;
+    color: #e84b3a;
 }
 header .menu-six .menu-button, header .menu-six .menu-button:hover, header .menu-six .menu-button:focus{
-    color: #1f9cbe;
+    color: #e84b3a;
     background-color: #fff;
 }
 header .menu-six .menu_cart > span:before{
-    color: #1f9cbe;
+    color: #e84b3a;
     background-color: #fff;
 }
 header .menu-seven{
@@ -486,10 +486,10 @@ header .menu-seven ul li a{
     color: #696969;
 }
 header .menu-seven ul li a:hover, header .menu-seven ul li a:focus, header .menu-seven ul li.active a{
-    color: #1f9cbe;
+    color: #e84b3a;
 }
 header .menu-seven .menu-button{
-    background-color: #1f9cbe;
+    background-color: #e84b3a;
 }
 nav.main-menu.menu-six.menu-fixed.dark-home-defult {
     background: transparent;
@@ -818,14 +818,14 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
     font-weight:700;
     font-size:36px;
     line-height:1;
-    color:#1f9cbe
+    color:#e84b3a
 }
 .banner-seven .seven-content-right .clock-item p{
     font-weight:700;
     font-size:14px;
     line-height:1.5;
     margin:0;
-    color:#1f9cbe
+    color:#e84b3a
 }
 .banner-seven .seven-content-right .clock-item:nth-child(2) p,.banner-seven .seven-content-right .clock-item:nth-child(2) span{
     color:#fc7f0c
@@ -905,12 +905,12 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
     margin-right:10px;
 }
 .banner-nine a{
-    color:#1f9cbe;
+    color:#e84b3a;
     padding:0 38px;
 }
 .banner-nine a:focus,.banner-nine a:hover{
     padding-bottom: 10px;
-    border-bottom: 3px solid #1f9cbe;
+    border-bottom: 3px solid #e84b3a;
 }
 .navbar-header .navbar-toggle .icon-bar {
     background-color: #fff;
@@ -957,11 +957,11 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
 }
 .topbanner .menu li{
     margin: 20px 40px 0px 0px;
-    color:#1f9cbe;
+    color:#e84b3a;
     border-radius: 5px;
 }
 .topbanner .menu li a{
-    color:#1f9cbe;
+    color:#e84b3a;
     background:none;
     font-size:20px;
     padding:10px 0px 10px 0px;
@@ -974,7 +974,7 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
     padding:15px 30px 15px 30px;
     border-radius: 5px;
     color:white;
-    background-color:#1f9cbe;
+    background-color:#e84b3a;
 }
 .page-header{
     margin:0;
@@ -1052,18 +1052,18 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
     font-size:36px
 }
 .about-six .section-header h2{
-    color:#1f9cbe
+    color:#e84b3a
 }
 .about-seven{
     background-color:#fafafa
 }
 .about-seven .section-header h2{
     font-size:36px;
-    color:#1f9cbe
+    color:#e84b3a
 }
 .about-seven .countdown h2{
     font-size:36px;
-    color:#1f9cbe;
+    color:#e84b3a;
     margin-bottom:50px
 }
 .about-seven .countdown li{
@@ -1208,7 +1208,7 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
     margin-top:10px;
 }
 .signup form input[type=submit]{
-    background:#1f9cbe;
+    background:#e84b3a;
     border-radius: 5px;
     width:120px;
     padding: 20px 20px 20px 20px;
@@ -1288,7 +1288,7 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
     font-family: Open Sans;
     font-style: normal;
     font-weight: bolder;
-    color: #1f9cbe;
+    color: #e84b3a;
     font-size: 25px;
 }
 .poweredby .row{
@@ -1315,7 +1315,7 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
 
 
 .tricolumntitles{
-    background-color: #1f9cbe;
+    background-color: #e84b3a;
     height:0%
 }
 .tricolumntitles .service-item h4{
@@ -1414,7 +1414,7 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
     position:relative;
     height:100%;
     width:100%;
-    background-color:#1f9cbe;
+    background-color:#e84b3a;
     opacity:.9
 }
 .speakers-six .content{
@@ -1445,7 +1445,7 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
     background:#fff
 }
 .speakers-seven .section-header h3{
-    color:#1f9cbe
+    color:#e84b3a
 }
 .speakers-seven .section-header p{
     color:#696969
@@ -1521,7 +1521,7 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
     width:100%;
 }
 .travel-seven .section-header h3{
-    color:#1f9cbe
+    color:#e84b3a
 }
 .travel-seven .section-header p{
     color:#696969
@@ -1575,7 +1575,7 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
 .sponsor a{
     padding:20px 10px 20px 10px;
     color:white;
-    background-color:#1f9cbe;
+    background-color:#e84b3a;
     width:20%;
     margin:0 auto;
     border-radius: 5px;
@@ -1898,7 +1898,7 @@ line-height: 18px;
     margin-left:4%;
     border-radius: 10px;
     padding:55px 0;
-    border: 3px solid #1f9cbe;
+    border: 3px solid #FD7359;
 }
 .newsletter p{
     font-size:18px;
@@ -1972,7 +1972,7 @@ line-height: 18px;
     float:left;
 }
 .btn-send{
-  background-color: #1f9cbe;
+  background-color: #e84b3a;
   color: #fff;
   width: 150px;
   height: 50px;
@@ -2002,7 +2002,6 @@ line-height: 18px;
     background : #FFFFFF;
     float:left;
 }
-
 .newsletter form{
     width:100%;
     float:right
@@ -2060,7 +2059,7 @@ footer .contactmail{
     text-align:center;
 }
 footer .contactmail a{
-    color:#1f9cbe!important;
+    color:#e84b3a!important;
     font-size:20px;
     text-decoration:underline;
 }
@@ -2307,7 +2306,7 @@ div#bs-example-navbar-collapse-1{
     opacity:0;
     visibility:hidden;
     z-index:0;
-    background-color: #1f9cbe;
+    background-color: #e84b3a;
     -webkit-transition:all .3s ease;
     -moz-transition:all .3s ease;
     -o-transition:all .3s ease;
@@ -2336,7 +2335,7 @@ div#bs-example-navbar-collapse-1 {
     opacity: 0;
     visibility: hidden;
     z-index: 9999;
-    background-color: #1f9cbe;
+    background-color: #e84b3a;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -3014,7 +3013,7 @@ input:checked+.slider:before{
     background-image: url(../../images/backgrounds/bg-pricing-06.jpg);
 }
 .pricing-six .pricing-item.first .pricing-header{
-    background-color: #1f9cbe;
+    background-color: #e84b3a;
 }
 .pricing-six .pricing-item.second .pricing-header{
     background-color: #fc7f0c;
@@ -3023,7 +3022,7 @@ input:checked+.slider:before{
     background-color: #f5b429;
 }
 .pricing-six .pricing-item.first .pricing-options p span{
-    background-color: #1f9cbe;
+    background-color: #e84b3a;
 }
 .pricing-six .pricing-item.second .pricing-options p span{
     background-color: #fc7f0c;
@@ -3035,7 +3034,7 @@ input:checked+.slider:before{
     background-color: #c9c9c9;
 }
 .pricing-six .pricing-item.first .pricing-button a{
-    color: #1f9cbe;
+    color: #e84b3a;
 }
 .pricing-six .pricing-item.second .pricing-button a{
     color: #fc7f0c;
@@ -3047,7 +3046,7 @@ input:checked+.slider:before{
     background: #fff;
 }
 .pricing-seven .section-header h3{
-    color: #1f9cbe;
+    color: #e84b3a;
 }
 .pricing-seven .section-header p{
     color: #696969;

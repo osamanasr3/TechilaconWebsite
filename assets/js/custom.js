@@ -308,6 +308,9 @@ function submit_form() {
     var mobile = document.getElementById("mobile").value;
     var email = document.getElementById("email").value;
     var message = document.getElementById("message").value;
+    var position = document.getElementById("position").value;
+    var companyName = document.getElementById("companyName").value;
+    var know = document.getElementById("know").value;
     var valid = validate(firstName,lastName,email,mobile,message);
     if(valid){
          // alert("Name : " + firstName + " " + lastName + " \nEmail : " + email +

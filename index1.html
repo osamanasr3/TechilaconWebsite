@@ -47,10 +47,10 @@
     <link href="assets/css/banner-bg.css" rel="stylesheet">
 
     <!-- Style -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style1.css" rel="stylesheet">
 
     <!-- Responsive -->
-    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link href="assets/css/responsive1.css" rel="stylesheet">
 
 </head>
 <body>
@@ -71,10 +71,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                       <li><a href="#top" class="page-scroll">Home</a></li>
                       <!--<li><a href="#top" class="page-scroll" disabled>Line up</a></li>-->
                       <li><a href="#GetOnTechila" class="page-scroll">Contact</a></li>
+                      <li><a href="#signup" class="page-scroll">Join</a></li>
                     </ul>
                   </div>
                   <div class="ms-btn-group">
-                    <a href="#signup" class="ms-btn page-scroll">Join</a>
+                    <a href="./index.html" class="ms-btn page-scroll">Online event</a>
                   </div>
                 </div>
           <nav class="main-menu menu-six menu-fixed">
@@ -93,7 +94,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <li><a href="#top" class="page-scroll">Home</a></li>
                         <!--<li><a href="" class="page-scroll" disabled>Line Up</a></li>-->
                         <li><a href="#GetOnTechila" class="page-scroll">Contact</a></li>
-                        <li><a href="#signup" class="page-scroll noselect">JOIN</a></li>
+                        <li><a href="#signup" class="page-scroll">Join</a></li>
+                        <li><a href="./index.html" class="page-scroll noselect">Online event</a></li>
                     </ul>
                 </div>
             </div>
@@ -239,41 +241,62 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 <div class="right-half">
                     <form action="/" name="submit-to-google-sheet">
-                        <p class="form-input-title">Name*</p>
                         <p class="error" id="error-name">&10006 Error</p>
-                        <p class="form-input-title"></p>
 
-                        <div class="firstName">
+                        <div class="leftInput">
+                          <p>First Name *</p>
                             <input type="text" name="First Name" id="firstName" autocomplete="given-name" class="form-control" required>
-                            <p>First Name</p>
                         </div>
-                        <div class="lastName">
+                        <div class="rightInput">
+                          <p>Last Name *</p>
                             <input type="text" name="Last Name" id="lastName"  autocomplete="family-name" class="form-control" required>
-                            <p>Last Name</p>
                         </div>
 
-                        <p class="form-input-title">Mobile Number*<br></p>
-                        <p class="error" id="error-mobile">&10006 Error</p>
-                        <p class="form-input-title"></p>
-                        <p class="form-input-title-desc">Please interest a number we can reach you on.</p>
-                        <input type="text" name="mobile" id="mobile" autocomplete="tel-national" class="form-control" required>
+                        <div class="leftInput">
+                          <p class="error" id="error-mobile">&10006 Error</p>
+                          <p class="form-input-title">Mobile Number *<br></p>
+                          <input type="text" name="mobile" id="mobile" autocomplete="tel-national" class="form-control" required>
+                        </div>
 
-                        <p class="form-input-title">Email*<br></p>
-                        <p class="error" id="error-email">&10006 Error</p>
-                        <p class="form-input-title"></p>
-                        <p class="form-input-title-desc">Please interest an email we can reach you on.</p>
-                        <input type="text" name="email" id="email"  autocomplete="email" class="form-control" required>
+                        <div class="rightInput">
+                          <p class="form-input-title">Email *<br></p>
+                          <p class="error" id="error-email">&10006 Error</p>
+                          <input type="text" name="email" id="email"  autocomplete="email" class="form-control" required>
+                        </div>
 
-                        <p class="form-input-title">I am interested in becoming a:*</p>
-                        <select name="Role" id="Role" value="Sponsor" class="form-control">
-                            <option value="Sponsor">Sponsor</option>
-                            <option value="Startup">Joining as a Startup</option>
-                            <option value="Media">Media Partner</option>
-                            <option value="Community">Community Partner</option>
-                            <option value="Other">Other</option>
-                        </select>
+                        <p class="error" id="error-company">&10006 Error</p>
+                        <div class="leftInput">
+                          <p>Company Name *</p>
+                          <input type="text" name="Company Name" id="companyName" class="form-control" required>
+                        </div>
+                        <div class="rightInput">
+                          <p>Position *</p>
+                          <input type="text" name="Position" id="position" class="form-control" required>
+                        </div>
 
-                        <p class="form-input-title"></p>
+                        <div class="leftInput">
+                            <p class="form-input-title">How did you know about us? <br></p>
+                            <p class="error" id="error-know">&10006 Error</p>
+                            <input type="text" name="know" id="know" class="form-control">
+                        </div>
+
+
+                        <div class="rightInput">
+                          <p class="form-input-title">I am interested in becoming a: *</p>
+                          <select name="Role" id="Role" value="Sponsor" class="form-control">
+                              <option value="Sponsor">Sponsor</option>
+                              <option value="Startup">Joining as a Startup</option>
+                              <option value="Media">Media Partner</option>
+                              <option value="Community">Community Partner</option>
+                              <option value="Other">Other</option>
+                          </select>
+                        </div>
+
+
+                        <!--<p>
+                          <small class="form-input-title-desc">Please interest an email we can reach you on.</small>
+                        </p>-->
+
                         <p class="error" id="error-message">&10006 Error</p>
                         <p class="form-input-title">Message *</p>
                 ​        <textarea id="message" name="Message" rows="5" class="form-control"></textarea>
@@ -283,133 +306,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
             </div>
         </section>
-
-        <!-- Pricing start here -->
-        <section class="pricing">
-            <div class="overlay">
-                <div class="container">
-
-                  <div class="section-header text-center tickets-title">
-                    <h3>Event <span class='selected'> Individual </span> Tickets</h3>
-                  </div>
-
-                  <div class="row text-center sliderRow">
-                    <p class="note">Invidividual</p>
-                    <label class="switch">
-                      <input type="checkbox" onclick='changeTickets()' class="cb">
-                      <span class="slider round"></span>
-                    </label>
-                    <p class="note">Group       </p>
-                  </div>
-
-                    <div class="pricing-items">
-                        <div class="row individual-tickets center-flex">
-                            <div class="col-md-5 col-sm-6 col-xs-12">
-                                <div class="pricing-item first">
-                                    <div class="pricing-header">
-                                        <h3 class="name">Basic Ticket</h3>
-                                        <h2 class="amount">250<sup>EGP</sup></h2>
-                                    </div>
-                                    <!-- pricing-header -->
-                                    <div class="pricing-options">
-                                        <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Workshops</p>
-                                        <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Talks</p>
-                                        <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Exhibition Areas</p>
-                                        <p><span class="off"><i class="fa fa-times" aria-hidden="true"></i></span>Hackathon</p>
-                                        <p><span class="off"><i class="fa fa-times" aria-hidden="true"></i></span>Mentor Circles</p>
-                                        <p><span class="off"><i class="fa fa-times" aria-hidden="true"></i></span>Giveaways (Full Swag)</p>
-                                        <p><span class="off"><i class="fa fa-times" aria-hidden="true"></i></span>Lounge Access</p>
-                                        <p><span class="off"><i class="fa fa-times" aria-hidden="true"></i></span>Food Promocodes</p>
-                                    </div>
-                                    <!-- pricing-options -->
-
-                                    <!-- <div id="eventtusWidgetContainer" class="pricing-button">
-                                        <a href="#">ticket now</a>
-                                    </div> -->
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-sm-6 col-xs-12">
-                                <div class="pricing-item second">
-                                    <div class="pricing-header">
-                                        <h3 class="name">Pro Ticket</h3>
-                                        <h2 class="amount">320<sup>EGP</sup></h2>
-                                    </div>
-                                    <!-- pricing-header -->
-                                    <div class="pricing-options">
-
-                                        <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Workshops</p>
-                                        <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Talks</p>
-                                        <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Exhibition Areas</p>
-                                        <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Hackathon</p>
-                                        <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Mentor Circles</p>
-                                        <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Giveaways (Full Swag)</p>
-                                        <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Lounge Access</p>
-                                        <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Food Promocodes</p>
-                                    </div>
-                                        <!-- <div id="eventtusWidgetContainer" class="pricing-button">
-                                        <a href="#">ticket now</a>
-                                    </div> -->
-                                    <!-- pricing-options -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- row -->
-                        <div class="row group-tickets center-flex hidden">
-                          <div class="col-md-5 col-sm-6 col-xs-12">
-                              <div class="pricing-item first">
-                                  <div class="pricing-header">
-                                        <h3 class="name">Basic Ticket</h3>
-                                        <h2 class="amount">250<sup>EGP</sup></h2>
-                                    </div>
-                                  <!-- pricing-header -->
-                                  <div class="pricing-options">
-                                        <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Workshops</p>
-                                        <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Talks</p>
-                                        <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Exhibition Areas</p>
-                                        <p><span class="off"><i class="fa fa-times" aria-hidden="true"></i></span>Hackathon</p>
-                                        <p><span class="off"><i class="fa fa-times" aria-hidden="true"></i></span>Mentor Circles</p>
-                                        <p><span class="off"><i class="fa fa-times" aria-hidden="true"></i></span>Giveaways (Full Swag)</p>
-                                        <p><span class="off"><i class="fa fa-times" aria-hidden="true"></i></span>Lounge Access</p>
-                                        <p><span class="off"><i class="fa fa-times" aria-hidden="true"></i></span>Food Promocodes</p>
-                                    </div>
-                                  <!-- pricing-options -->
-
-                              </div>
-                          </div>
-                          <div class="col-md-5 col-sm-6 col-xs-12">
-                              <div class="pricing-item off">
-                                  <div class="pricing-header">
-                                        <h3 class="name">Pro Ticket</h3>
-                                        <h2 class="amount">320<sup>EGP</sup></h2>
-                                    </div>
-                                  <!-- pricing-header -->
-                                  <div class="pricing-options">
-
-                                        <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Workshops</p>
-                                        <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Talks</p>
-                                        <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Exhibition Areas</p>
-                                        <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Hackathon</p>
-                                        <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Mentor Circles</p>
-                                        <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Giveaways (Full Swag)</p>
-                                        <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Lounge Access</p>
-                                        <p><span><i class="fa fa-check" aria-hidden="true"></i></span>Food Promocodes</p>
-                                    </div>
-                                  <!-- pricing-options -->
-
-                              </div>
-                          </div>
-                        </div>
-                    </div>
-                    <!-- pricing items -->
-                    <div class="eventusbutton" id="eventtusWidgetContainer">BUY NOW</div>
-                </div>
-                <!-- container -->
-            </div>
-            <!-- overlay -->
-        </section>
-        <!-- pricing -->
-        <!-- Pricing end here -->
-
 
          <section class="sponsor">
             <div class="section-header text-center">

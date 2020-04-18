@@ -58,50 +58,52 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFWP9ZL"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-    <div class="box-layout">
+<div class="box-layout">
 
-        <section class="banner banner-nine" id="top">
+    <section class="banner banner-nine" id="top">
 
-                <div class="mobile-menu-area">
-                  <div class="close">
-                    <i class="fa fa-close"></i>
-                  </div>
-                  <div class="mobile-menu">
-                    <ul class="m-menu">
-                      <li><a href="#top" class="page-scroll">Home</a></li>
-                      <!--<li><a href="#top" class="page-scroll" disabled>Line up</a></li>-->
-                      <li><a href="#GetOnTechila" class="page-scroll">Contact</a></li>
-                    </ul>
-                  </div>
-                  <div class="ms-btn-group">
-                    <a href="#signup" class="ms-btn page-scroll">Join</a>
-                  </div>
-                </div>
-          <nav class="main-menu menu-six menu-fixed">
-          <div class="topbanner container">
-            <div class="navbar-header">
-                <a class="navbar-brand noselect" href="#top"><img src="images/techila_white.png" alt="logo" class="img-responsive nav-img"></a>
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="background: #1f9cbe;">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
+            <div class="mobile-menu-area">
+              <div class="close">
+                <i class="fa fa-close"></i>
+              </div>
+              <div class="mobile-menu">
+                <ul class="m-menu">
+                  <li><a href="#top" class="page-scroll">Home</a></li>
+                  <!--<li><a href="#top" class="page-scroll" disabled>Line up</a></li>-->
+                  <li><a href="#GetOnTechila" class="page-scroll">Contact</a></li>
+                  <li><a href="#signup" class="page-scroll">Join</a></li>
+                </ul>
+              </div>
+              <div class="ms-btn-group">
+                <a href="./index1.html" class="ms-btn page-scroll">Offline event</a>
+              </div>
             </div>
-                <div class="menu collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#top" class="page-scroll">Home</a></li>
-                        <!--<li><a href="" class="page-scroll" disabled>Line Up</a></li>-->
-                        <li><a href="#GetOnTechila" class="page-scroll">Contact</a></li>
-                        <li><a href="#signup" class="page-scroll noselect">JOIN</a></li>
-                    </ul>
-                </div>
+      <nav class="main-menu menu-six menu-fixed">
+      <div class="topbanner container">
+        <div class="navbar-header">
+            <a class="navbar-brand noselect" href="#top"><img src="images/techila_white.png" alt="logo" class="img-responsive nav-img"></a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="background: #e84b3a;">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        </div>
+            <div class="menu collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#top" class="page-scroll">Home</a></li>
+                    <!--<li><a href="" class="page-scroll" disabled>Line Up</a></li>-->
+                    <li><a href="#GetOnTechila" class="page-scroll">Contact</a></li>
+                    <li><a href="#signup" class="page-scroll">Join</a></li>
+                    <li><a href="./index1.html" class="page-scroll noselect">Offline event</a></li>
+                </ul>
             </div>
-          </nav>
+        </div>
+      </nav>
 
-            <h1>COMING SOON.</h1>
-            <video id="bg" src="media/tgc.mp4" autoplay="true" loop="true" muted="true"></video>
-        </section>
+        <h1>COMING SOON.</h1>
+        <video id="bg" src="media/tgc.mp4" autoplay="true" loop="true" muted="true"></video>
+    </section>
 
             <!-- Video ends here-->
 
@@ -240,41 +242,62 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 <div class="right-half">
                     <form action="/" name="submit-to-google-sheet">
-                        <p class="form-input-title">Name*</p>
                         <p class="error" id="error-name">&10006 Error</p>
-                        <p class="form-input-title"></p>
 
-                        <div class="firstName">
+                        <div class="leftInput">
+                          <p>First Name *</p>
                             <input type="text" name="First Name" id="firstName" autocomplete="given-name" class="form-control" required>
-                            <p>First Name</p>
                         </div>
-                        <div class="lastName">
+                        <div class="rightInput">
+                          <p>Last Name *</p>
                             <input type="text" name="Last Name" id="lastName"  autocomplete="family-name" class="form-control" required>
-                            <p>Last Name</p>
                         </div>
 
-                        <p class="form-input-title">Mobile Number*<br></p>
-                        <p class="error" id="error-mobile">&10006 Error</p>
-                        <p class="form-input-title"></p>
-                        <p class="form-input-title-desc">Please interest a number we can reach you on.</p>
-                        <input type="text" name="mobile" id="mobile" autocomplete="tel-national" class="form-control" required>
+                        <div class="leftInput">
+                          <p class="error" id="error-mobile">&10006 Error</p>
+                          <p class="form-input-title">Mobile Number *<br></p>
+                          <input type="text" name="mobile" id="mobile" autocomplete="tel-national" class="form-control" required>
+                        </div>
 
-                        <p class="form-input-title">Email*<br></p>
-                        <p class="error" id="error-email">&10006 Error</p>
-                        <p class="form-input-title"></p>
-                        <p class="form-input-title-desc">Please interest an email we can reach you on.</p>
-                        <input type="text" name="email" id="email"  autocomplete="email" class="form-control" required>
+                        <div class="rightInput">
+                          <p class="form-input-title">Email *<br></p>
+                          <p class="error" id="error-email">&10006 Error</p>
+                          <input type="text" name="email" id="email"  autocomplete="email" class="form-control" required>
+                        </div>
+                        
+                        <p class="error" id="error-company">&10006 Error</p>
+                        <div class="leftInput">
+                          <p>Company Name *</p>
+                          <input type="text" name="Company Name" id="companyName" class="form-control" required>
+                        </div>
+                        <div class="rightInput">
+                          <p>Position *</p>
+                          <input type="text" name="Position" id="position" class="form-control" required>
+                        </div>
 
-                        <p class="form-input-title">I am interested in becoming a:*</p>
-                        <select name="Role" id="Role" value="Sponsor" class="form-control">
-                            <option value="Sponsor">Sponsor</option>
-                            <option value="Startup">Joining as a Startup</option>
-                            <option value="Media">Media Partner</option>
-                            <option value="Community">Community Partner</option>
-                            <option value="Other">Other</option>
-                        </select>
 
-                        <p class="form-input-title"></p>
+                        <div class="leftInput">
+                            <p class="form-input-title">How did you know about us? <br></p>
+                            <p class="error" id="error-know">&10006 Error</p>
+                            <input type="text" name="know" id="know" class="form-control">
+                        </div>
+
+
+                        <div class="rightInput">
+                          <p class="form-input-title">I am interested in becoming a: *</p>
+                          <select name="Role" id="Role" value="Sponsor" class="form-control">
+                              <option value="Sponsor">Sponsor</option>
+                              <option value="Startup">Joining as a Startup</option>
+                              <option value="Media">Media Partner</option>
+                              <option value="Community">Community Partner</option>
+                              <option value="Other">Other</option>
+                          </select>
+                        </div>
+
+                        <!--<p>
+                          <small class="form-input-title-desc">Please interest an email we can reach you on.</small>
+                        </p>-->
+
                         <p class="error" id="error-message">&10006 Error</p>
                         <p class="form-input-title">Message *</p>
                 ​        <textarea id="message" name="Message" rows="5" class="form-control"></textarea>
