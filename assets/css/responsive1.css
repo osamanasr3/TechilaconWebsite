@@ -618,6 +618,9 @@
 	.intro.container{
 		width: 100%;
 	}
+	.intro h4{
+		font-size: 95%;
+	}
 	.banner .content-right:before{
 		bottom:31.5%
 }

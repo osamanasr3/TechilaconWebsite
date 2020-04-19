@@ -1,12 +1,12 @@
 /*Orange color #FD7359 or e84b3a*/
 /* blue = 1f9cbe*/
 html{
-    font-family:Open Sans;
+    font-family:'Open Sans';
     -webkit-text-size-adjust:100%;
     -ms-text-size-adjust:100%
 }
 body{
-    font-family:Open Sans;
+    font-family:'Open Sans';
     font-size:15px;
     width: 100%;
     height: 100%;
@@ -126,7 +126,7 @@ em,i{
     font-style:italic
 }
 var{
-    font-family:Open Sans
+    font-family:'Open Sans'
 }
 html{
     -webkit-box-sizing:border-box;
@@ -157,20 +157,20 @@ img{
 }
 ::-webkit-input-placeholder{
     color:#696969;
-    font-family:Open Sans;
+    font-family:'Open Sans';
 }
 :-moz-placeholder{
     color:#696969;
-    font-family:Open Sans;
+    font-family:'Open Sans';
 }
 ::-moz-placeholder{
     color:#696969;
-    font-family:Open Sans;
+    font-family:'Open Sans';
     opacity:1
 }
 :-ms-input-placeholder{
     color:#696969;
-    font-family:Open Sans;
+    font-family:'Open Sans';
 }
 input{
     line-height:normal
@@ -180,7 +180,7 @@ input[type=button],input[type=button][disabled]:focus,input[type=button][disable
     border:0;
     border-radius:2px;
     color:#fff;
-    font-family:Open Sans;
+    font-family:'Open Sans';
     font-weight:700;
     letter-spacing:.046875em;
     line-height:1;
@@ -757,7 +757,7 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
     transform:translateY(-50%)
 }
 .banner-seven .seven-content-left span{
-    font-family:Open Sans;
+    font-family:'Open Sans';
     font-weight:700;
     font-size:190px;
     line-height:170px;
@@ -765,7 +765,7 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
     text-transform:uppercase
 }
 .banner-seven .seven-content-left h2{
-    font-family:Open Sans;
+    font-family:'Open Sans';
     color:#fff;
     max-width:270px;
     display:inline-block;
@@ -1144,14 +1144,14 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
 }
 .services .section-header h3{
     color:#000;
-    font-family:Open Sans;
+    font-family:'Open Sans';
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
 }
 .services .section-header p{
     color:#000;
-    font-family:Open Sans;
+    font-family:'Open Sans';
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -1173,7 +1173,7 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
 .services .service-item p{
     margin:0;
     color:#000;
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -1267,7 +1267,7 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
     height:0%;
 }
 .poweredby p{
-        font-family: Open Sans;
+        font-family: 'Open Sans';
     padding-left:10px;
     padding-top:20px;
     padding-right:10px;
@@ -1285,7 +1285,7 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
     margin-top:20px;
 }
 .poweredby h3{
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: bolder;
     color: #1f9cbe;
@@ -1319,7 +1319,7 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
     height:0%
 }
 .tricolumntitles .service-item h4{
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
@@ -1614,7 +1614,7 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
 }
 .sponsor-seven .section-header h3{
     color:#FFFFFF;
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
@@ -1624,7 +1624,7 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
     color:#696969
 }
 .sponsor-seven .sponsor-item h5{
-    font-family: Open Sans;
+    font-family: 'Open Sans';
 font-style: normal;
 font-weight: 300;
 font-size: 15px;
@@ -1810,7 +1810,7 @@ line-height: 18px;
     outline:0
 }
 .countdown .remain h1{
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 1;
     text-transform: uppercase;
@@ -1864,13 +1864,13 @@ line-height: 18px;
     font-size:40px;
     line-height:1;
     font-weight:700;
-    font-family:Open Sans,sans-serif;
+    font-family:'Open Sans',sans-serif;
     width:50%;
 }
 .countdown li .count-number.days{
     color:#ff4600;
     width:50%;
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: bold;
     font-size: 100px;
@@ -1883,7 +1883,7 @@ line-height: 18px;
     font-size: 100px;
 }
 .countdown li .count-text{
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 300;
     font-size: 30px;
@@ -1928,7 +1928,7 @@ line-height: 18px;
 
 .newsletter .left-half h1{
     color: #000;
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: normal;
     font-size: 45px;
@@ -1938,7 +1938,7 @@ line-height: 18px;
 
 .newsletter .left-half p{
     color: #000;
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -1978,7 +1978,7 @@ line-height: 18px;
   height: 50px;
 }
 .newsletter .right-half form p{
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight:normal;
     font-weight: 300;

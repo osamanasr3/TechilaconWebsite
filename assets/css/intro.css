@@ -1,12 +1,12 @@
 /*Orange color #FD7359 or e84b3a*/
 /* blue = 1f9cbe*/
 html{
-    font-family:Open Sans;
+    font-family:'Open Sans';
     -webkit-text-size-adjust:100%;
     -ms-text-size-adjust:100%
 }
 body{
-    font-family:Open Sans;
+    font-family:'Open Sans';
     font-size:15px;
     width: 100%;
     height: 100vh;
@@ -132,7 +132,7 @@ em,i{
     font-style:italic
 }
 var{
-    font-family:Open Sans
+    font-family:'Open Sans'
 }
 html{
     -webkit-box-sizing:border-box;
@@ -160,20 +160,20 @@ img{
 }
 ::-webkit-input-placeholder{
     color:#696969;
-    font-family:Open Sans;
+    font-family:'Open Sans';
 }
 :-moz-placeholder{
     color:#696969;
-    font-family:Open Sans;
+    font-family:'Open Sans';
 }
 ::-moz-placeholder{
     color:#696969;
-    font-family:Open Sans;
+    font-family:'Open Sans';
     opacity:1
 }
 :-ms-input-placeholder{
     color:#696969;
-    font-family:Open Sans;
+    font-family:'Open Sans';
 }
 input{
     line-height:normal
@@ -183,7 +183,7 @@ input[type=button],input[type=button][disabled]:focus,input[type=button][disable
     border:0;
     border-radius:2px;
     color:#fff;
-    font-family:Open Sans;
+    font-family:'Open Sans';
     font-weight:700;
     letter-spacing:.046875em;
     line-height:1;
@@ -197,8 +197,16 @@ input[type=button],input[type=button][disabled]:focus,input[type=button][disable
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   min-height: 70vh;
+}
+.intro h4
+{
+  color: #2d4051;
+  line-height: 25px;
+  letter-spacing: 1px;
+  word-wrap: break-word;
+  margin-bottom: 10px;
 }
 .parts{
   height: 100%;
@@ -226,6 +234,8 @@ a.a-btn{
   text-decoration: none;
 }
 .a-btn{
+  font-family:'Open Sans';
+  font-weight: bold;
   text-align: center;
   padding: 10px 10px;
   margin: 10px 20px;
