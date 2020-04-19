@@ -611,8 +611,13 @@
 }
 
 
-
 @media only screen and (max-width:540px){
+	.img-intro{
+		width: 100%;
+	}
+	.intro.container{
+		width: 100%;
+	}
 	.banner .content-right:before{
 		bottom:31.5%
 }
