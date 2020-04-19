@@ -222,12 +222,12 @@ input[type=button],input[type=button][disabled]:focus,input[type=button][disable
   border-color: #FD7359;
 }
 
-a.btn{
+a.a-btn{
   text-decoration: none;
 }
-.btn{
+.a-btn{
   text-align: center;
-  padding: 5px 2px;
+  padding: 10px 10px;
   margin: 10px 20px;
   color: #fff;
   width: 150px;
