@@ -244,47 +244,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <form action="/" name="submit-to-google-sheet">
                         <p class="error" id="error-name">&10006 Error</p>
 
-                        <div class="leftInput">
+                        <div class="col-xs-12 col-sm-6">
                           <p>First Name *</p>
                             <input type="text" name="First Name" id="firstName" autocomplete="given-name" class="form-control" required>
                         </div>
-                        <div class="rightInput">
+                        <div class="col-xs-12 col-sm-6">
                           <p>Last Name *</p>
                             <input type="text" name="Last Name" id="lastName"  autocomplete="family-name" class="form-control" required>
                         </div>
 
-                        <div class="leftInput">
+                        <div class="col-xs-12 col-sm-6">
                           <p class="error" id="error-mobile">&10006 Error</p>
                           <p class="form-input-title">Mobile Number *<br></p>
                           <input type="text" name="mobile" id="mobile" autocomplete="tel-national" class="form-control" required>
                         </div>
 
-                        <div class="rightInput">
+                        <div class="col-xs-12 col-sm-6">
                           <p class="form-input-title">Email *<br></p>
                           <p class="error" id="error-email">&10006 Error</p>
                           <input type="text" name="email" id="email"  autocomplete="email" class="form-control" required>
                         </div>
 
                         <p class="error" id="error-company">&10006 Error</p>
-                        <div class="leftInput">
+                        <div class="col-xs-12 col-sm-6">
                           <p>Company Name *</p>
                           <input type="text" name="Company Name" id="companyName" class="form-control" required>
                         </div>
-                        <div class="rightInput">
+                        <div class="col-xs-12 col-sm-6">
                           <p>Position *</p>
                           <input type="text" name="Position" id="position" class="form-control" required>
                         </div>
 
 
-                        <div class="leftInput">
+                        <div class="col-xs-12 col-sm-6">
                             <p class="form-input-title">How did you know about us? <br></p>
                             <p class="error" id="error-know">&10006 Error</p>
                             <input type="text" name="know" id="know" class="form-control">
                         </div>
 
 
-                        <div class="rightInput">
-                          <p class="form-input-title">I am interested in becoming a: *</p>
+                        <div class="col-xs-12 col-sm-6">
+                          <p class="form-input-title">Interested in becoming: *</p>
                           <select name="Role" id="Role" value="Sponsor" class="form-control">
                               <option value="Sponsor">Sponsor</option>
                               <option value="Startup">Joining as a Startup</option>
@@ -299,7 +299,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </p>-->
 
                         <p class="error" id="error-message">&10006 Error</p>
-                        <p class="form-input-title">Message *</p>
+                        <p class="form-input-title col-xs-12">Message *</p>
                 ​        <textarea id="message" name="Message" rows="5" class="form-control"></textarea>
                         <!-- <div class="loader"></div>  -->
                         <button type="submit" name="send" value="send" onclick="submit_form()" class="btn btn-lg btn-send">send</button>
