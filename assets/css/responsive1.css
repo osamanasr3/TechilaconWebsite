@@ -169,10 +169,6 @@
 	header{
 		margin-top:150px
 }
-	.navbar-header{
-		width:100%;
-		/*border-bottom:4px solid #000;*/
-}
 	header .main-menu .navbar-brand{
 		width:100%
 }
@@ -879,14 +875,5 @@
 	footer .contactmail{
 		width:100%;
 	    color:#e84b3a;
-	}
-
-	.navbar-header{
-	    width:100%;
-	}
-	.navbar-header a{
-		/*border:2px solid red;*/
-		padding-left:0px;
-		padding-right:0px;
 	}
 }
