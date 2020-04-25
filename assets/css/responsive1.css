@@ -449,7 +449,7 @@
 
 @media only screen and (max-width:767px){
 
-			img.nav-img{
+			img.img-responsive{
 					width: 120px;
 					margin-top: 0;
 					margin-left: 0;
