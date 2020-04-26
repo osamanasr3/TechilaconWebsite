@@ -846,6 +846,9 @@
 	}
 	.banner-nine video{
 	    position:static;
+		height:100%;
+		width:100%;
+		
 	}
 	.banner-nine h1{
     	font-size:35px;

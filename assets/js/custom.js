@@ -311,18 +311,25 @@ function submit_form() {
     var position = document.getElementById("position").value;
     var companyName = document.getElementById("companyName").value;
     var know = document.getElementById("know").value;
-    var valid = validate(firstName,lastName,email,mobile,message);
+    var valid = validate(firstName,lastName,email,mobile,message,position,companyName,know);
     if(valid){
+        element = document.getElementById("buttonsend");
+        element.disabled = true;
+        element.innerHTML = "sending";
          // alert("Name : " + firstName + " " + lastName + " \nEmail : " + email +
          //     "\nMobile : " + mobile + "\nMessage : " + message);
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(function(){alert('Message sent successfully! We\'ll be in touch soon')})
-        .catch(function(){alert('An error has occured. Please try again later')})
+        .then(function(){alert('Message sent successfully! We\'ll be in touch soon');
+                        element.disabled = false;
+                        element.innerHTML = "send";})
+        .catch(function(){alert('An error has occured. Please try again later');
+                        element.disabled = false;
+                        element.innerHTML = "send";})
     }
     event.preventDefault();
 }
 
-function validate(firstName,lastName,email,phone,message){
+function validate(firstName,lastName,email,phone,message,position,companyName,know){
     var emailPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     var phonePattern = /^(010|011|012)[0-9]{8}$/;
     var namePattern = /^[a-zA-Z]{0,15}$/;
@@ -332,80 +339,88 @@ function validate(firstName,lastName,email,phone,message){
     var returnValue = true;
     clearFormErrors();
 
-    if(checkEmpty(firstName,lastName,email,phone,message)){
+    if(checkEmpty(firstName,lastName,email,phone,message,position,companyName,know)){
         return false;
     }
 
     if(!(namePattern.test(firstName))){
-        element = document.getElementById("error-name");
+        element = document.getElementById("error-firstname");
         element.style.display = "block";
-        element.innerHTML = "&#10006 Invalid first name entered"
+        element.innerHTML = "&#10006 Invalid first name"
         firstnameinvalid = true;
         returnValue = false;
     }
     if(!(namePattern.test(lastName))){
-        element = document.getElementById("error-name");
+        element = document.getElementById("error-lastname");
         element.style.display = "block";
-        if(firstnameinvalid){
-            element.innerHTML = "&#10006 Invalid first and last names entered"
-        }
-        else{
-            element.innerHTML = "&#10006 Invalid last name entered"
-        }
+        element.innerHTML = "&#10006 Invalid last name"
         returnValue = false;
     }
     if(!(emailPattern.test(email))){
         element = document.getElementById("error-email");
         element.style.display = "block";
-        element.innerHTML = "&#10006 Invalid email entered"
+        element.innerHTML = "&#10006 Invalid email"
         returnValue = false;
     }
     if(!(phonePattern.test(phone))){
         element = document.getElementById("error-mobile");
         element.style.display = "block";
-        element.innerHTML = "&#10006 Invalid mobile entered"
+        element.innerHTML = "&#10006 Invalid mobile"
         returnValue = false;
     }
     return returnValue;
 }
-function checkEmpty(firstName,lastName,email,phone,message){
+function checkEmpty(firstName,lastName,email,phone,message,position,companyName,know){
     var returnvalue = false;
     var firstIsEmpty = false;
     var element;
     if(firstName == ""){
-        element = document.getElementById("error-name");
+        element = document.getElementById("error-firstname");
         element.style.display = "block";
-        element.innerHTML = "&#10006 First Name is required"
+        element.innerHTML = "&#10006 Field is required"
         firstIsEmpty = true;
         returnvalue = true;
     }
     if(lastName == ""){
-        element = document.getElementById("error-name");
+        element = document.getElementById("error-lastname");
         element.style.display = "block";
-        if(firstIsEmpty){
-            element.innerHTML = "&#10006 First and Last names are required"
-        }
-        else{
-            element.innerHTML = "&#10006 Last Name is required"
-        }
+        element.innerHTML = "&#10006 Field is required"
         returnvalue = true;
     }
     if(email == ""){
         element = document.getElementById("error-email");
         element.style.display = "block";
-        element.innerHTML = "&#10006 Email is required"
+        element.innerHTML = "&#10006 Field is required"
         returnvalue = true;
     }
     if(phone == ""){
         element = document.getElementById("error-mobile");
         element.style.display = "block";
-        element.innerHTML = "&#10006 Mobile Number is required"
+        element.innerHTML = "&#10006 Field is required"
         returnvalue = true;
     }
     if(message.replace(/\s/g,'') == ""){
         element = document.getElementById("error-message");
         element.style.display = "block";
-        element.innerHTML = "&#10006 Message is required"
+        element.innerHTML = "&#10006 Field is required"
+        returnvalue = true;
+    }
+    if(position == ""){
+        element = document.getElementById("error-company");
+        element.style.display = "block";
+        element.innerHTML = "&#10006 Field is required"
+        returnvalue = true;
+    }
+    if(companyName == ""){
+        element = document.getElementById("error-position");
+        element.style.display = "block";
+        element.innerHTML = "&#10006 Field is required"
+        returnvalue = true;
+    }
+    if(know == ""){
+        element = document.getElementById("error-know");
+        element.style.display = "block";
+        element.innerHTML = "&#10006 Field is required"
         returnvalue = true;
     }
     return returnvalue;
@@ -433,7 +448,9 @@ function changeTickets()
 
 function clearFormErrors(){
     var element;
-    element = document.getElementById("error-name");
+    element = document.getElementById("error-firstname");
+    element.style.display = "None";
+    element = document.getElementById("error-lastname");
     element.style.display = "None";
     element = document.getElementById("error-email");
     element.style.display = "None";
@@ -441,7 +458,12 @@ function clearFormErrors(){
     element.style.display = "None";
     element = document.getElementById("error-message");
     element.style.display = "None";
-
+    element = document.getElementById("error-company");
+    element.style.display = "None";
+    element = document.getElementById("error-position");
+    element.style.display = "None";
+    element = document.getElementById("error-know");
+    element.style.display = "None";
 }
 
 function submit_mail() {
@@ -465,6 +487,10 @@ function submit_mail() {
         element.innerHTML = "&#10006 Invalid Email Entered";
     }
     else{
+        element = document.getElementById("signupbutton");
+        element.disabled = true;
+        element.value = "Signing Up";
+        element.style.pointerEvents = "none";
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(
             function(){
@@ -477,7 +503,10 @@ function submit_mail() {
         )
         .catch(
             function(){
-                alert('An error has occured. Please try again later')
+                alert('An error has occured. Please try again later');
+                element.disabled = false;
+                element.value = "Sign Up";
+                element.style.pointerEvents = "auto";
             }
         )
     }
