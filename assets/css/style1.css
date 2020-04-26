@@ -970,7 +970,7 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
 .topbanner .menu li:last-child a{
     padding:15px 30px 15px 30px;
     border-radius: 5px;
-    color:white;
+    color: white;
     background-color:#e84b3a;
 }
 .page-header{
@@ -980,7 +980,7 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
     -webkit-transform:translateY(-100%);
     -moz-transform:translateY(-100%);
     transform:translateY(-100%);
-    margin-bottom:-68px
+    margin-bottom:-68px;
 }
 .page-header .content{
     background-color:#e4e5e5;
