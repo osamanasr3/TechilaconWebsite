@@ -1308,7 +1308,12 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
 .poweredby .service-item p{
     margin:0
 }
-
+.individual-tickets
+{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 .tricolumntitles{
     background-color: #1f9cbe;
@@ -1330,6 +1335,7 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
     margin-left:0px;
     width:100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .tricolumntitles .service-item{
