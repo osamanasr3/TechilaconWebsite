@@ -1329,6 +1329,8 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
     padding-right:5%;
     margin-left:0px;
     width:100%;
+    display: flex;
+    justify-content: space-around;
 }
 .tricolumntitles .service-item{
     width:33%;
