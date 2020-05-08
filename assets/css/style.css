@@ -2745,15 +2745,11 @@ input:checked+.slider:before{
     color: #fff;
 }
 .pricing .pricing-item{
+    margin-top : 20px;
     margin-bottom: 20px;
 }
 .pricing .pricing-item.first{
-    background-color: rgb(251,116,94);
-    //here
-}
-.pricing .pricing-item.second{
     background-color: rgb(94,199,243);
-    //here
 }
 .pricing .pricing-item.third{
     background-color: #969;
@@ -2787,6 +2783,7 @@ input:checked+.slider:before{
 .pricing .pricing-item .pricing-options p:last-child{
     border: none;
     margin: 0px;
+    text-align:center;
     padding: 0px;
 }
 .pricing .pricing-item .pricing-options p span{
@@ -3209,7 +3206,7 @@ input:checked + .slider:before {
     height:50px;
 }
 .eventusbutton{
-    width:40%;
+    width:100%;
     margin: auto;
     font-size:25px;
     font-weight:bold;
