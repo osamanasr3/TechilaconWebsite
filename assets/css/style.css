@@ -1314,6 +1314,11 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.tickets-title
+{
+  margin: 40px;
+  margin-top: 60px;
+}
 
 .tricolumntitles{
     background-color: #1f9cbe;
@@ -1549,13 +1554,20 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
     margin-bottom:50px
 }
 .sponsor .sponsor-item .sponsor-img{
-    width:100%;
+    margin: 0 auto;
+    width: 85%;
 }
 .sponsor .sponsor-item .sponsor-img img{
     color:red;
     width:18%;
     /*border:4px solid #00FF00;*/
-    margin: 0 auto;
+    margin: 0 10px;
+}
+.sponsor .sponsor-item .sponsor-img img.mot-logo{
+  width: 13%;
+}
+.sponsor .sponsor-item .sponsor-img img.main-sponsor-logo{
+  width: 25%;
 }
 .sponsor .sponsor-item h5{
     color:#fff;
