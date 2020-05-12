@@ -3239,3 +3239,6 @@ input:checked + .slider:before {
     padding-top:5%;
     padding-bottom:5%;
 }
+.logocollage{
+    margin-top:1%;
+}

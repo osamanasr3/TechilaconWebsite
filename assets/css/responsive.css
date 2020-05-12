@@ -865,6 +865,10 @@
 		margin:0px;
 		padding:0px;
 	}
+	.logocollage{
+    	display:none;
+	}
+
 	footer .copyright{
 		width:100%;
 	}
