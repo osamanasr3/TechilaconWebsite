@@ -21,6 +21,9 @@ canvas,video{
     display:inline-block;
     vertical-align:baseline
 }
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+}
 [hidden]{
     display:none
 }

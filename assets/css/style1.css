@@ -24,6 +24,9 @@ canvas,video{
 [hidden]{
     display:none
 }
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+}
 a{
     background-color:transparent;
     color:#696969;
