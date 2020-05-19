@@ -1355,7 +1355,9 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
 .speakers{
     background-size:cover;
     background-position:50% 50%;
-    overflow:hidden
+    overflow:hidden;
+    padding-top: 120px;
+    padding-bottom: 50px;
 }
 .speakers .section-header{
     margin-bottom:60px
@@ -1389,142 +1391,102 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
 .speakers .speaker-item:hover .icon{
     color:#ff9822
 }
-.speakers-three .speaker-item .speaker-content{
-    background-color:#fff;
-    text-align:center;
-    padding:22px
+/*   speaker section  */
+.speakers.speakers-eight {
+    background-image: none;
 }
-.speakers-three .speaker-item .speaker-content h4 a,.speakers-three .speaker-item .speaker-content span{
-    color:#010101;
-    text-decoration:none;
-    -webkit-transition:.25s;
-    -moz-transition:.25s;
-    transition:.25s
+.speakers.speakers-eight .section-header h3 {
+    color: #000;
 }
-.speakers-three .speaker-item:hover .speaker-content h4 a,.speakers-three .speaker-item:hover .speaker-content span{
-    color:#ff9822
+.speakers.speakers-eight .section-header p {
+    color: #696969;
 }
-.speakers-six{
-    background-image:url(../../images/backgrounds/bg-speakers-06.jpg)
+.speakers.speakers-eight .speaker-item {
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    margin-bottom: 40px;
 }
-.speakers-six .speaker-image{
-    position:relative;
-    overflow:hidden
+
+.speakers.speakers-eight .speaker-image {
+    width: 268px;
+    height: 268px;
+    float: left;
+    margin-right: 15px;
+    text-align: center;
+    position: relative;
 }
-.speakers-six .speaker-image img{
-    width:100%
+.speakers.speakers-eight .speaker-image:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 0px 268px 268px 0px;
+    border-color: #1f9cbe transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
 }
-.speakers-six .speaker-content-bg{
-    position:absolute;
-    height:100%;
-    width:100%;
-    top:100%;
-    text-align:center;
-    padding:10px
+.speakers.speakers-eight .speaker-image img {
+    width: 220px;
+    height: 220px;
+    border-radius: 100%;
+    position: relative;
+    z-index: 9;
+    top: 26px;
+    left: 25px;
 }
-.speakers-six .speaker-content{
-    position:relative;
-    height:100%;
-    width:100%;
-    background-color:#1f9cbe;
-    opacity:.9
+.speakers.speakers-eight .speaker-content {
+    display: table;
+    padding: 25px 10px 0px 0px;
 }
-.speakers-six .content{
-    position:absolute;
-    top:50%;
-    width:100%;
-    transform:translateY(-50%)
+.speakers.speakers-eight .speaker-social {
+    padding-left: 0;
+    list-style: none;
 }
-.speakers-six .speaker-content h4 a{
-    color:#fff;
-    text-decoration:none;
-    font-size:24px
+.speakers.speakers-eight .speaker-social li {
+    float: left;
 }
-.speakers-six .speaker-content span{
-    color:#fff;
-    font-size:16px;
-    margin-bottom:10px
+.speakers.speakers-eight .speaker-social li a {
+    display: block;
+    margin-right: 8px;
+    font-size: 16px;
 }
-.speakers-six .speaker-item .speaker-social li{
-    list-style:none;
-    display:inline-block;
-    margin-right:10px
+.speakers.speakers-eight .speaker-social li a .fa-facebook {
+   color: #475995;
 }
-.speakers-six .speaker-item .speaker-social a{
-    color:#fff
+.speakers.speakers-eight .speaker-social li a .fa-twitter {
+    color: #6ab5e7;
 }
-.speakers-seven{
-    background:#fff
+.speakers.speakers-eight .speaker-social li a .fa-google-plus {
+    color: #be463a;
 }
-.speakers-seven .section-header h3{
-    color:#1f9cbe
+.speakers.speakers-eight .speaker-social li a .fa-dribbble {
+    color: #cb4d86;
 }
-.speakers-seven .section-header p{
-    color:#696969
+.speakers.speakers-eight .speaker-social li a .fa-pinterest-p {
+    color: #ae242b;
 }
-.speakers-seven .speaker-item{
-    text-align:center
+
+.speakers.speakers-eight .speaker-item .speaker-content p {
+    margin-bottom: 10px;
 }
-.speakers-seven .speaker-image{
-    position:relative;
-    height:300px;
-    width:300px;
-    overflow:hidden;
-    border-radius:100%;
-    margin:0 auto 30px
+.speakers.speakers-eight .speaker-item .speaker-content h4 {
+    margin: 15px 0;
 }
-.speakers-seven .speaker-overlay{
-    position:absolute;
-    height:100%;
-    width:100%;
-    left:0;
-    top:0;
-    border-radius:100%;
-    background-color:rgba(240,36,25,.8);
-    background:-webkit-gradient(linear,left top,right top,from(rgba(240,36,25,.8)),to(rgba(248,214,21,.7)));
-    background:-webkit-linear-gradient(left,rgba(248,214,21,.8),rgba(240,36,25,.8));
-    background:-moz-linear-gradient(left,rgba(248,214,21,.8),rgba(240,36,25,.8));
-    background:-ms-linear-gradient(left,rgba(248,214,21,.8),rgba(240,36,25,.8));
-    background:-o-linear-gradient(left,rgba(248,214,21,.8),rgba(240,36,25,.8));
-    -webkit-transform:scale(0);
-    transform:scale(0);
-    opacity:0;
-    -webkit-transition:.25s ease-out;
-    transition:.25s ease-out
+.speakers.speakers-eight .speaker-item .speaker-content h4 a {
+    color: #000;
 }
-.speakers-seven .speaker-item:hover .speaker-overlay{
-    -webkit-transform:scale(1);
-    transform:scale(1);
-    opacity:1
+.speakers.speakers-eight .speaker-item .speaker-content h4 a:hover {
+    text-decoration: none;
+    color: #ee0034;
 }
-.speakers-seven .speaker-social{
-    position:absolute;
-    width:100%;
-    top:50%;
-    -webkit-transform:translateY(-50%);
-    transform:translateY(-50%);
-    margin:0
+.speakers.speakers-eight .speaker-item .speaker-content h4 span {
+    display: block;
+    font-size: 14px;
+    color: #696969;
+    margin-top: 4px;
 }
-.speakers-seven .speaker-social li{
-    list-style:none;
-    display:inline-block;
-    margin-right:5px
-}
-.speakers-seven .speaker-social li a{
-    font-size:20px;
-    color:#fff
-}
-.speakers-seven .speaker-content h4{
-    font-size:20px
-}
-.speakers-seven .speaker-content h4 a{
-    text-decoration:none;
-    color:#212121
-}
-.speakers-seven .speaker-content span{
-    font-size:16px;
-    color:#212121
-}
+
 .travel .section-header{
     margin-bottom:50px
 }

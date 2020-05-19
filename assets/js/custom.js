@@ -1,3 +1,76 @@
+const speakers = [
+  {
+    name: "Ahmed",
+    image: "",
+    text: "",
+    facebook: "",
+    twitter: "",
+  }
+  ,
+  {
+    name: "Mahmoud",
+    image: "",
+    text: "",
+    facebook: "",
+    twitter: "",
+  }
+]
+function generateSpeakers()
+{
+  const speakers_row = document.querySelector("#speakers-row");
+  const speakers_cards = speakers.map( (speaker) => {
+
+    const col = document.createElement("div");
+    col.classList.add('col-md-6');
+    //col.innerHTML = speaker.name;
+
+    const speaker_item = document.createElement("div");
+    speaker_item.classList.add('speaker-item');
+
+    const speaker_image = document.createElement("div");
+    speaker_image.classList.add('speaker-image');
+    speaker_image.innerHTML = `<img src="images/speakers/speaker_20.jpg" alt="speaker image" class="img-responsive">`
+
+    speaker_item.append(speaker_image);
+
+    const speaker_content = document.createElement("div");
+    speaker_content.classList.add('speaker-content');
+
+    const content = document.createElement("div");
+    content.classList.add('content');
+
+    const title = document.createElement("h4");
+    title.innerHTML = `${speaker.name}<span>Speaker</span>`;
+    content.append(title);
+
+
+    const text = document.createElement("p");
+    text.innerHTML = speaker.text? speaker.text: 'Samet consectetuer apiscing elitsed diam nonumy nibh euismod ncidun awesome team mumber';
+    content.append(text);
+
+    const list = document.createElement("ul");
+    list.classList.add('speaker-social');
+    list.innerHTML = `
+      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+    `;
+    content.append(list);
+
+
+    speaker_content.append(content);
+    speaker_item.append(speaker_content);
+    col.append(speaker_item);
+    speakers_row.append(col);
+  }
+);
+
+}
+
+generateSpeakers();
+
 (function($){
     'use strict';
     //menu options
