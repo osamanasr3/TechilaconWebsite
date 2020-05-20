@@ -20,6 +20,28 @@ const speakers = [
     dribbble: "",
     pinterest: "",
   }
+  ,
+  {
+    name: "speaker3",
+    image: "",
+    text: "",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  }
+  ,
+  {
+    name: "speaker4",
+    image: "",
+    text: "",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  }
 ]
 function generateSpeakers()
 {
@@ -28,7 +50,6 @@ function generateSpeakers()
 
     const col = document.createElement("div");
     col.classList.add('col-md-6');
-    //col.innerHTML = speaker.name;
 
     const speaker_item = document.createElement("div");
     speaker_item.classList.add('speaker-item');
