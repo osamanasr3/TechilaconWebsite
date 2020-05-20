@@ -1,18 +1,24 @@
 const speakers = [
   {
-    name: "Ahmed",
+    name: "speaker1",
     image: "",
     text: "",
     facebook: "",
     twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
   }
   ,
   {
-    name: "Mahmoud",
-    image: "",
+    name: "speaker2",
+    image: "images/speakers/mamoanwar.jpg",
     text: "",
     facebook: "",
     twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
   }
 ]
 function generateSpeakers()
@@ -29,7 +35,7 @@ function generateSpeakers()
 
     const speaker_image = document.createElement("div");
     speaker_image.classList.add('speaker-image');
-    speaker_image.innerHTML = `<img src="images/speakers/speaker_20.jpg" alt="speaker image" class="img-responsive">`
+    speaker_image.innerHTML = speaker.image? `<img src="${speaker.image}" alt="${speaker.name}" class="img-responsive">`: `<img src="images/speakers/speaker_20.jpg" alt="speaker image" class="img-responsive">`;
 
     speaker_item.append(speaker_image);
 
@@ -51,12 +57,12 @@ function generateSpeakers()
     const list = document.createElement("ul");
     list.classList.add('speaker-social');
     list.innerHTML = `
-      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-      <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-      <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-      <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-    `;
+      ${speaker.facebook? `<li><a href="${speaker.facebook}"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>` : ""}
+      ${speaker.twitter? `<li><a href="${speaker.twitter}"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>` : ""}
+      ${speaker.google? `<li><a href="${speaker.google}"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>` : ""}
+      ${speaker.dribbble? `<li><a href="${speaker.dribbble}"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>` : ""}
+      ${speaker.pinterest? `<li><a href="${speaker.pinterest}"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>` : ""}
+      `;
     content.append(list);
 
 
