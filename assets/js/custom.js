@@ -1,6 +1,47 @@
 const speakers = [
   {
-    name: "speaker1",
+    name: "Max Wright",
+    title: "IT Project Manager and Training Specialist at Pipedrive",
+    image: "images/speakers/Max_Wright.jpg",
+    text: "One of the very first employees of Pipedrive, he has worked as Training Partner for \
+     almost a decade and has trained practically all Pipedrive employees in using its own top-rated CRM \
+     and sales management software.",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  }
+  ,
+    {
+    name: "Arho Anttila ",
+    title: "General Manager Asia & Africa @ Pipedrive",
+    image: "images/speakers/Arho_Anttila.jpg",
+    text: "Arho is a seasoned business manager with over 30 years of experience in developing international business.\
+     He has worked in over 30 countries during his career, of which the last two decades he has mainly been involved in\
+      helping various IT start-ups to expand globally.",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  }
+  ,
+  {
+    name: "Selina Bieber",
+    title: "Senior Regional Director for Turkey, MENA and South Africa at Godaddy.com",
+    image: "images/speakers/Selina_Bieber.jpg",
+    text: "",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  }
+  ,
+  {
+    name: "Casper Ackermann",
+    title: "Ackermann",
     image: "",
     text: "",
     facebook: "",
@@ -11,8 +52,22 @@ const speakers = [
   }
   ,
   {
-    name: "speaker2",
-    image: "images/speakers/mamoanwar.jpg",
+    name: "Frank Yaw-Owusu",
+    title: "Ecosystem Developer EMEA, Twilio Startups",
+    image: "images/speakers/Frank_Yaw-Owusu.png",
+    text: "Frank studied Law and worked as a senior strategy consultant at IBM, Parliamentary Digital Services, and KPMG.\
+     He enjoys building meaningful relationships with founders and helping them to solve complex challenges as they scale.",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  }
+  ,
+  {
+    name: "Roberto Crocei",
+    title: "Microsoft",
+    image: "images/speakers/Roberto_Crocei.jpg",
     text: "",
     facebook: "",
     twitter: "",
@@ -22,8 +77,9 @@ const speakers = [
   }
   ,
   {
-    name: "speaker3",
-    image: "",
+    name: "Moataz Nabil",
+    title: "Senior SDET, Test Automation Expert, and technical trainer",
+    image: "images/speakers/Moataz_Nabil.png",
     text: "",
     facebook: "",
     twitter: "",
@@ -33,7 +89,8 @@ const speakers = [
   }
   ,
   {
-    name: "speaker4",
+    name: "Maha Abouelenein",
+    title: "---",
     image: "",
     text: "",
     facebook: "",
@@ -41,6 +98,47 @@ const speakers = [
     google: "",
     dribbble: "",
     pinterest: "",
+  }
+  ,
+]
+const agendaDay1 = [
+  {
+    title: "Day1Test1",
+    time: "08:30am - 09:30pm",
+    details: "Donec in velit vel ipsum auctor pulvinar. Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipis. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet.",
+    image: "images/speakers/Max_Wright.jpg",
+    speaker: "William L. Khanna",
+    position : "UX Designer",
+  }
+  ,
+    {
+    title: "Diploma in User Experience Design2",
+    time: "08:30am - 09:30pm",
+    details: "YA LOTFYYYYYYYY",
+    image: "images/23-06-19/schedule/01.jpg",
+    speaker: "William L. Khanna",
+    position : "UX Designer",
+  }
+
+]
+
+const agendaDay2 = [
+  {
+    title: "Day2Test1",
+    time: "08:30am - 09:33pm",
+    details: "Donec in velit vel ipsum auctor pulvinar. Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipis. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet.",
+    image: "",
+    speaker: "William L. Khanna",
+    position : "UX Designer",
+  }
+  ,
+    {
+    title: "Day2Test2",
+    time: "08:30am - 09:30pm",
+    details: "YA LOTFYYYYYYYY",
+    image: "images/23-06-19/schedule/01.jpg",
+    speaker: "William L. Khanna",
+    position : "UX Designer",
   }
 ]
 function generateSpeakers()
@@ -67,9 +165,8 @@ function generateSpeakers()
     content.classList.add('content');
 
     const title = document.createElement("h4");
-    title.innerHTML = `${speaker.name}<span>Speaker</span>`;
+    title.innerHTML = `${speaker.name}<span>${speaker.title}</span>`;
     content.append(title);
-
 
     const text = document.createElement("p");
     text.innerHTML = speaker.text? speaker.text: 'Samet consectetuer apiscing elitsed diam nonumy nibh euismod ncidun awesome team mumber';
@@ -96,7 +193,86 @@ function generateSpeakers()
 
 }
 
-generateSpeakers();
+function generateAgenda(day,array)
+{
+  
+  const agenda_table = document.querySelector(day);
+  const agenda_cards = array.map( (agendarow) => {
+
+    const schedule_item = document.createElement("div");
+    schedule_item.classList.add('schedules-item');
+
+    const schedule_head = document.createElement("div");
+    schedule_head.classList.add('schedule-head');
+
+    const schedule_title= document.createElement("h5");
+    schedule_title.innerHTML = agendarow.title? `${agendarow.title}`: `missing`;
+
+    const schedule_time = document.createElement("time");
+    schedule_time.innerHTML = agendarow.time? `${agendarow.time}`: `missing`;
+
+    const schedule_time_logo = document.createElement("div");
+    schedule_time_logo.classList.add('schedule-time');
+
+    schedule_time_logo.onclick = function (e){
+        if($(this).next('.schedule-dropdown-element').css('display') != 'block'){
+            $('.active1').slideUp(500).removeClass('active1');
+            $('.schedule-time').removeClass('in');
+            $(this).next('.schedule-dropdown-element').addClass('active1').slideDown(500);
+            $(this).addClass('in');
+        }else{
+            $('.active1').slideUp(500).removeClass('active1');
+            $(this).removeClass('in');
+        }
+        }
+
+    const schedule_icon = document.createElement("div");
+    schedule_icon.classList.add('icon');
+
+    const schedule_content = document.createElement("div");
+    schedule_content.classList.add('schedule-dropdown-element');
+
+    const schedule_content_text = document.createElement("p");
+    schedule_content_text.innerHTML = agendarow.details? `${agendarow.details}`: `missing`;
+
+    const schedule_person = document.createElement("div");
+    schedule_person.classList.add('schedule-person');
+
+    const schedule_person_img = document.createElement("div");
+    schedule_person_img.classList.add('schedule-person-img');
+    schedule_person_img.innerHTML = agendarow.image? `<img src="${agendarow.image}" alt="schedule">`: `<img src="images/23-06-19/schedule/01.jpg" alt="schedule">`;
+
+
+    const schedule_desc = document.createElement("div");
+    schedule_desc.classList.add('schedule-desc');
+
+    const schedule_speaker = document.createElement("h6");
+    schedule_speaker.innerHTML = agendarow.speaker? `<a href="#">${agendarow.speaker} </a>`: '<a href="#">missing</a>';
+
+
+    const schedule_position = document.createElement("span");
+    schedule_position.innerHTML = agendarow.position? `${agendarow.position}`: `missing`;
+
+    schedule_desc.append(schedule_speaker);
+    schedule_desc.append(schedule_position);
+    schedule_person.append(schedule_person_img);
+    schedule_person.append(schedule_desc);
+    schedule_content.append(schedule_content_text);
+    schedule_time_logo.append(schedule_icon);
+    schedule_head.append(schedule_title);
+    schedule_head.append(schedule_time);
+    schedule_head.append(schedule_time_logo);
+    schedule_head.append(schedule_content);
+    schedule_item.append(schedule_head);
+    schedule_item.append(schedule_person);
+    agenda_table.append(schedule_item);
+    }
+
+
+);
+
+    
+}
 
 (function($){
     'use strict';
@@ -356,17 +532,6 @@ generateSpeakers();
 
 
     // event schedule section start here
-    $('.schedule-time').on('click',function (e){
-        if($(this).next('.schedule-dropdown-element').css('display') != 'block'){
-            $('.active1').slideUp(500).removeClass('active1');
-            $('.schedule-time').removeClass('in');
-            $(this).next('.schedule-dropdown-element').addClass('active1').slideDown(500);
-            $(this).addClass('in');
-        }else{
-            $('.active1').slideUp(500).removeClass('active1');
-            $(this).removeClass('in');
-        }
-    });
 
 
 	$('.parallax-one').parallax({imageSrc: 'images/11-04-19/paralax2.png'});
@@ -620,3 +785,7 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
+
+generateSpeakers();
+generateAgenda("#schedule-day1",agendaDay1);
+generateAgenda("#schedule-day2",agendaDay2);

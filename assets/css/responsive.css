@@ -901,4 +901,10 @@
 		width:100%;
 	    color:#1f9cbe;
 	}
+	.schedules.home-12 .schedules-item .schedule-time .icon:after {
+    height: 100%;
+    width: 2px;
+    left: 100%;
+    transform: translateX(-50%);
+	}
 }
