@@ -41,7 +41,7 @@ const speakers = [
     google: "",
     dribbble: "",
     pinterest: "",
-  } 
+  }
   ,
   {
     name: "Frank Yaw-Owusu",
@@ -69,12 +69,12 @@ const speakers = [
     google: "",
     dribbble: "",
     pinterest: "",
-  }
+  }/*
   ,
 {
     name: "Ali Abou El Nasr",
     title: "Co founder of FMF",
-    image: "",
+    image: "images/speakers/Arho_Anttila.jpg",
     text: "Co-founded “Find Me Football”  They were voted joint 2nd best application in Africa by the African Application\
      Luanchpad and were honored by the Egyptian President for our work. Along the way, they also helped bring football\
       statistics to Egypt and work with the national team on their journey to the World Cup and worked as an assistant\
@@ -84,7 +84,7 @@ const speakers = [
     google: "",
     dribbble: "",
     pinterest: "",
-  } 
+  } */
   ,
   {
     name: "Selina Bieber",
@@ -235,7 +235,7 @@ function generateSpeakers()
 
 function generateAgenda(day,array)
 {
-  
+
   const agenda_table = document.querySelector(day);
   const agenda_cards = array.map( (agendarow) => {
 
@@ -311,7 +311,7 @@ function generateAgenda(day,array)
 
 );
 
-    
+
 }
 
 (function($){
