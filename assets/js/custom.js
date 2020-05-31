@@ -1,11 +1,55 @@
 const speakers = [
+
   {
-    name: "Max Wright",
-    title: "IT Project Manager and Training Specialist at Pipedrive",
-    image: "images/speakers/Max_Wright.jpg",
-    text: "One of the very first employees of Pipedrive, he has worked as Training Partner for \
-     almost a decade and has trained practically all Pipedrive employees in using its own top-rated CRM \
-     and sales management software.",
+    name: "Saif Ahmed",
+    title: "CPO at Widebot",
+    image: "images/speakers/Saif_Ahmed.jpg",
+    text: "Saif Ahmed is the co-founder and CPO of WideBot, and a maintainer of WideBot platform,\
+     The First Arabic-Focused Bot Builder Platform. He focuses on empowering business to build the\
+      best possible conversational experiences and has years of experience building AI products in industry.",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  }
+  ,
+  {
+    name: "Roberto Crocei",
+    title: "Microsoft",
+    image: "images/speakers/Roberto_Crocei.jpg",
+    text: "Roberto Croci, He is integral as the Regional Managing director at Microsoft for startups Middle East,\
+     in helping startups achieve their goals by promoting their tech solutions through digital and social campaigns,\
+      opening up the right opportunities for growth, customizing a market plan to  maximize joint marketing with Microsoft\
+       and providing a targeted industry co-marketing and account planning.",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  }
+  ,
+{
+    name: "Punit Shah",
+    title: "Microsoft",
+    image: "images/speakers/Punit_Shah.jpg",
+    text: "At Microsoft, Punit works with Startups on how to best use Azure capabilities, \
+    customized and aligned with organization’s goals. He helps architect, design, implement, \
+    migrate, and grow applications on the Microsoft Azure platform.",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  } 
+  ,
+  {
+    name: "Frank Yaw-Owusu",
+    title: "Ecosystem Developer EMEA, Twilio Startups",
+    image: "images/speakers/Frank_Yaw-Owusu.png",
+    text: "Frank is an Ecosystem Developer EMEA for the Twilio Startups team. He is both curious and passionate\
+     about how digital strategy, disruptive innovation, technology, and culture can transform the ways businesses\
+      and people behave and interact within a society responding to continuous change",
     facebook: "",
     twitter: "",
     google: "",
@@ -18,20 +62,37 @@ const speakers = [
     title: "General Manager Asia & Africa @ Pipedrive",
     image: "images/speakers/Arho_Anttila.jpg",
     text: "Arho is a seasoned business manager with over 30 years of experience in developing international business.\
-     He has worked in over 30 countries during his career, of which the last two decades he has mainly been involved in\
-      helping various IT start-ups to expand globally.",
+     Arho is an early employee at Pipedrive where his first task was to set up and launch the company’s channel partner\
+      program.",
     facebook: "",
     twitter: "",
     google: "",
     dribbble: "",
     pinterest: "",
   }
+  ,
+{
+    name: "Ali Abou El Nasr",
+    title: "Co founder of FMF",
+    image: "",
+    text: "Co-founded “Find Me Football”  They were voted joint 2nd best application in Africa by the African Application\
+     Luanchpad and were honored by the Egyptian President for our work. Along the way, they also helped bring football\
+      statistics to Egypt and work with the national team on their journey to the World Cup and worked as an assistant\
+       to Alex McLeish and a translator for other coaches at Zamalek Football club.",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  } 
   ,
   {
     name: "Selina Bieber",
-    title: "Senior Regional Director for Turkey, MENA and South Africa at Godaddy.com",
+    title: "Senior Regional Director for Turkey, MENA and South Africa at godaddy.com",
     image: "images/speakers/Selina_Bieber.jpg",
-    text: "",
+    text: "Selina headed up media relations across Europe for a large-scale energy project headquartered in the Netherlands,\
+     and spent close to seven years in Turkey managing communications activities for a range of foreign clients including\
+      Facebook, VeriSign Inc. and Euler Hermes, and leading marketing communications for infrastructure giant Makyol A.Ş",
     facebook: "",
     twitter: "",
     google: "",
@@ -40,35 +101,11 @@ const speakers = [
   }
   ,
   {
-    name: "Casper Ackermann",
-    title: "Ackermann",
-    image: "",
-    text: "",
-    facebook: "",
-    twitter: "",
-    google: "",
-    dribbble: "",
-    pinterest: "",
-  }
-  ,
-  {
-    name: "Frank Yaw-Owusu",
-    title: "Ecosystem Developer EMEA, Twilio Startups",
-    image: "images/speakers/Frank_Yaw-Owusu.png",
-    text: "Frank studied Law and worked as a senior strategy consultant at IBM, Parliamentary Digital Services, and KPMG.\
-     He enjoys building meaningful relationships with founders and helping them to solve complex challenges as they scale.",
-    facebook: "",
-    twitter: "",
-    google: "",
-    dribbble: "",
-    pinterest: "",
-  }
-  ,
-  {
-    name: "Roberto Crocei",
-    title: "Microsoft",
-    image: "images/speakers/Roberto_Crocei.jpg",
-    text: "",
+    name: "Max Wright",
+    title: "IT Project Manager and Training Specialist at Pipedrive",
+    image: "images/speakers/Max_Wright.jpg",
+    text: "Max is an experienced IT project manager and training specialist. One of the very first employees of Pipedrive,\
+     he has worked as Training Partner for almost a decade and has trained practically all Pipedrive employees",
     facebook: "",
     twitter: "",
     google: "",
@@ -80,7 +117,9 @@ const speakers = [
     name: "Moataz Nabil",
     title: "Senior SDET, Test Automation Expert, and technical trainer",
     image: "images/speakers/Moataz_Nabil.png",
-    text: "",
+    text: "Moataz currently is a senior SDET, Test Automation Expert, and technical trainer. He\
+    has extensive experience in building an automation process from scratch for big,\
+    distributed projects.",
     facebook: "",
     twitter: "",
     google: "",
@@ -90,9 +129,10 @@ const speakers = [
   ,
   {
     name: "Maha Abouelenein",
-    title: "---",
-    image: "",
-    text: "",
+    title: "Chief Value Officer for Gary Vaynerchuk & Executive Vice President, Business Development VaynerX",
+    image: "images/speakers/Maha_Abouelenein.png",
+    text: "Maha comes to VaynerX with an illustrious career of more than 28 years of international experience advising\
+     global corporate giants, high growth tech startups, top governments and high net worth individuals.",
     facebook: "",
     twitter: "",
     google: "",
