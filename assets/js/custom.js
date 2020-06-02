@@ -115,7 +115,7 @@ const speakers = [
   ,
   {
     name: "Moataz Nabil",
-    title: "Senior SDET, Test Automation Expert, and technical trainer",
+    title: "Senior SDET at Delivery Hero SE, Test Automation Expert, and technical trainer",
     image: "images/speakers/Moataz_Nabil.png",
     text: "Moataz currently is a senior SDET, Test Automation Expert, and technical trainer. He\
     has extensive experience in building an automation process from scratch for big,\
@@ -140,6 +140,18 @@ const speakers = [
     pinterest: "",
   }
   ,
+  {
+    name: "Yasmin Helmy",
+    title: "Growth Marketing Team Lead at Instabug",
+    image: "images/speakers/Yasmin_Helmy1.JPG",
+    text: "Yasmine is an experienced growth marketer with a huge passion for SaaS\
+     and Tech Startups. She’s on a mission to grow Instabug into a unicorn with the Instabug squad.",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  }
 ]
 const agendaDay1 = [
   {
