@@ -1529,11 +1529,11 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
 }
 .sponsor .sponsor-item .sponsor-img{
     margin: 0 auto;
-    width: 85%;
+    width: 90%;
 }
 .sponsor .sponsor-item .sponsor-img img{
     color:red;
-    width:21%;
+    width: 20%;
     /*border:4px solid #00FF00;*/
     margin: 0 10px;
 }
@@ -3219,7 +3219,10 @@ input:checked + .slider:before {
     border-radius: 10px;
     margin-top:1%;
 }
-
+.schedules{
+  background-color: #2C4050;
+  padding: 50px 0;
+}
 .schedules.home-12 {
     background-size: cover;
     background-position: center bottom;
