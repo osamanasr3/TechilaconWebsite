@@ -152,46 +152,263 @@ const speakers = [
     dribbble: "",
     pinterest: "",
   }
+  ,
+  {
+    name: "Casper Ackermann",
+    title: "Ackermann",
+    image: "images/speakers/Casper.jpg",
+    text: "Casper Ackermann is a Danish digital marketing expert with a speciality in email marketing.\
+     He kicked off his career in digital marketing at the Danish web and cloud hosting company Meebox \
+     (sold in 2016) before founding his own agency, Ackerrmann, in 2016 at the age of only 22.",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  },
+  {
+    name: "Ahmed ElMeleegy",
+    title: "Instabug - Business Advisor",
+    image: "images/speakers/Ahmed_ELMeleegy.jpeg",
+    text: "Ahmed is passionate about talking to customers, helping them realize value,\
+     and watching them become champions. He joined Instabug in 2019 as the second sales hire,\
+      and has watched our sales process evolve and change. He’ll be talking about how to structure a sales cycle.",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  }
 ]
 const agendaDay1 = [
   {
-    title: "Day1Test1",
-    time: "08:30am - 09:30pm",
-    details: "Donec in velit vel ipsum auctor pulvinar. Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipis. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet.",
-    image: "images/speakers/Max_Wright.jpg",
-    speaker: "William L. Khanna",
-    position : "UX Designer",
+    title: "Welcoming & Briefing",
+    time: "11:30 AM",
+    details:"",
+    image: "images/speakers/techila.png",
+    speaker: "TechilaCon Team",
+    position :" ",
   }
   ,
     {
-    title: "Diploma in User Experience Design2",
-    time: "08:30am - 09:30pm",
-    details: "YA LOTFYYYYYYYY",
-    image: "images/23-06-19/schedule/01.jpg",
-    speaker: "William L. Khanna",
-    position : "UX Designer",
+    title: "Cost Optimization for Startups	",
+    time: "12:00 PM",
+    details: "",
+    image: "images/speakers/Roberto_Crocei.jpg",
+    speaker: "Roberto Crocei",
+    position : "Microsoft",
   }
-
+  ,
+  {
+    title: "CRM for Startups",
+    time: "1:00 PM",
+    details: "Cost Management is one of the Five Disciplines of Cloud Governance within the Cloud Adoption Framework governance model. Based on field experiences and real life scenarios, this session will help you understand common pitfalls to avoid and realize significant reductions in the total cost of ownership for your Cloud Solutions.",
+    image: "images/speakers/Arho_Anttila.jpg",
+    speaker: "Arho Anttila",
+    position : "Pipedrive",
+  }
+  ,
+  {
+    title: "Build a Digital Presence with GoDaddy",
+    time: "1:00 PM",
+    details: "",
+    image: "images/speakers/Selina_Bieber.jpg",
+    speaker: "Selina Bieber",
+    position : "Go Daddy",
+  }
+  ,
+  {
+    title: "E-commerce & Business Masterclass",
+    time: "2:00 PM",
+    details: "Product Design - From Shoppers to Buyers",
+    image: "",
+    speaker: "Omar El Metwally",
+    position : "Cairo Angels - Sigma Fit",
+  }
+  ,
+  {
+    title: "E-commerce & Business Masterclass",
+    time: "3:00 PM",
+    details: "Creating E-commerce Sales Funnel",
+    image: "",
+    speaker: "Mahmoud Khalifa",
+    position : "Cairo Angels - Hive Society",
+  }
+  ,
+  {
+    title: "E-commerce & Business Masterclass",
+    time: "4:00 PM",
+    details: "Market Opportunities in E-commerce",
+    image: "",
+    speaker: "Omar Mohamed",
+    position : "Cairo Angels - Spreadit",
+  }
+  ,
+  {
+    title: "Product Management  V.S Product Ownership	",
+    time: "4:00 PM",
+    details: "",
+    image: "images/speakers/Saif_Ahmed.jpg",
+    speaker: "Saif Ahmed",
+    position : "WideBot",
+  }
+  ,
+  {
+    title: "Customer Engagement - A Startup Guide",
+    time: "5:00 PM",
+    details: "",
+    image: "images/speakers/Frank_Yaw-Owusu.png",
+    speaker: "Frank",
+    position : "Twilio",
+  }
+  ,
+  {
+    title: "Unifying Your Data Streams",
+    time: "6:00 PM",
+    details: "",
+    image: "",
+    speaker: "Sehaj",
+    position : "Segment",
+  }
+  ,
+  {
+    title: "Leadership & Team Building",
+    time: "7:00 PM",
+    details: "",
+    image: "",
+    speaker: "Hany Barakat",
+    position : "Facebook",
+  }
+  ,
+  {
+    title: "Introduction to Pipedrive",
+    time: "8:00 PM",
+    details: "",
+    image: "images/speakers/Max_Wright.jpg",
+    speaker: "Max Wright",
+    position : "Pipedrive",
+  }
+  ,
+  {
+    title: "Value Now, Money Later",
+    time: "9:00 PM",
+    details: "",
+    image: "images/speakers/Ahmed_ElMeleegy.jpeg",
+    speaker: "Ahmed ElMeleegy",
+    position : "Instabug",
+  }
+  ,
+  {
+    title: "YOGA",
+    time: "10:00 PM",
+    details: "",
+    image: "",
+    speaker: "Mayar Elkorashy",
+    position : " ",
+  }
+  ,
 ]
 
 const agendaDay2 = [
   {
-    title: "Day2Test1",
-    time: "08:30am - 09:33pm",
-    details: "Donec in velit vel ipsum auctor pulvinar. Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipis. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet.",
-    image: "",
-    speaker: "William L. Khanna",
-    position : "UX Designer",
+    title: "Welcoming & Briefing",
+    time: "11:30 AM",
+    details: "",
+    image: "images/speakers/techila.png",
+    speaker: "TechilaCon Team",
+    position : " ",
   }
   ,
     {
-    title: "Day2Test2",
-    time: "08:30am - 09:30pm",
-    details: "YA LOTFYYYYYYYY",
-    image: "images/23-06-19/schedule/01.jpg",
-    speaker: "William L. Khanna",
-    position : "UX Designer",
+    title: "Cost Optimization for Cloud Solutions",
+    time: "12:00 PM",
+    details: "",
+    image: "images/speakers/Punit_Shah.jpg",
+    speaker: "Punit",
+    position : "Microsoft",
   }
+  ,
+    {
+    title: "Email Marketing for Startups",
+    time: "1:00 PM",
+    details: "",
+    image: "images/speakers/Casper.jpg",
+    speaker: "Casper Ackermann",
+    position : "Ackermann",
+  }
+  ,
+    {
+    title: "Defining the Metrics that matters",
+    time: "2:00 PM",
+    details: "",
+    image: "images/speakers/Yasmin_Helmy1.JPG",
+    speaker: "Yasmin Helmy",
+    position : "Instabug",
+  }/*
+  ,
+    {
+    title: "Importance of Mobile Attribution and Optimisation	",
+    time: "3:00 PM",
+    details: "",
+    image: "",
+    speaker: "Riyad Khalil",
+    position : "Adjust",
+  }*/
+  ,
+    {
+    title: "PR for startups (90 mins)",
+    time: "05:00 PM",
+    details: "",
+    image: "",
+    speaker: "Maha Abouelenein",
+    position : "VAYNER X",
+  }
+  ,
+    {
+    title: "The Test Automation Challenges with Mobile Apps Development",
+    time: "07:00 PM",
+    details: "",
+    image: "images/speakers/Moataz_Nabil.png",
+    speaker: "Moataz Nabil",
+    position : "Delivery Hero",
+  }
+  ,
+    {
+    title: "Digital Transformation in Sports",
+    time: "08:00 PM",
+    details: "",
+    image: "images/speakers/Ali_Abou_El Nasr.jpeg",
+    speaker: "Ali Abou Elnasr",
+    position : "Find Me Football",
+  }
+  ,
+    {
+    title: "Product Guys Panel - Product Launch in tough times/ stressful times",
+    time: "09:00 PM",
+    details: "",
+    image: "",
+    speaker: "Product Guys",
+    position : " ",
+  }
+  ,
+    {
+    title: "Rock band",
+    time: "10:00 PM",
+    details: "",
+    image: "",
+    speaker: "CairoPathix",
+    position : " ",
+  }
+  ,
+    {
+    title: "Event Closing",
+    time: "11:00 PM",
+    details: "",
+    image: "images/speakers/techila.png",
+    speaker: "TechilaCon Team",
+    position : " ",
+  }
+  ,
 ]
 function generateSpeakers()
 {
@@ -199,6 +416,7 @@ function generateSpeakers()
   const speakers_cards = speakers.map( (speaker) => {
 
     const col = document.createElement("div");
+    col.classList.add('col-9');
     col.classList.add('col-md-6');
 
     const speaker_item = document.createElement("div");
@@ -310,7 +528,7 @@ function generateAgenda(day,array)
     schedule_person.append(schedule_person_img);
     schedule_person.append(schedule_desc);
     schedule_content.append(schedule_content_text);
-    schedule_time_logo.append(schedule_icon);
+    agendarow.details? schedule_time_logo.append(schedule_icon): ``;
     schedule_head.append(schedule_title);
     schedule_head.append(schedule_time);
     schedule_head.append(schedule_time_logo);
@@ -839,5 +1057,5 @@ function closeNav() {
 }
 
 generateSpeakers();
-/*generateAgenda("#schedule-day1",agendaDay1);
-generateAgenda("#schedule-day2",agendaDay2);*/
+generateAgenda("#schedule-day1",agendaDay1);
+generateAgenda("#schedule-day2",agendaDay2);
