@@ -98,6 +98,19 @@ const speakers = [
     google: "",
     dribbble: "",
     pinterest: "",
+  },
+  {
+    name: "Hany Barakat",
+    title: "Enineering Manager - Facebook",
+    image: "images/speakers/hany.jpg",
+    text: "An engineering manager @ Facebook with experience leading multiple teams\
+     that tackle hard problems with full stack experience ranging from mobile development\
+      to high availability and high performance online services. Hany has a passion to grow individuals and build more effective teams.",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
   }
   ,
   {
@@ -173,6 +186,17 @@ const speakers = [
     text: "Ahmed is passionate about talking to customers, helping them realize value,\
      and watching them become champions. He joined Instabug in 2019 as the second sales hire,\
       and has watched our sales process evolve and change. He’ll be talking about how to structure a sales cycle.",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  },
+  {
+    name: "Mayar ElKorashy",
+    title: "People Engagement Lead at Trella",
+    image: "images/speakers/Mayar_ElKorashy.jpg",
+    text: "Mayar is a Yoga Practitioner for as far as she remembers. Three years ago, she left everything behind and travelled to Rishekish, the Yoga Capital of the World in India to fulfill her passion towards Yoga Teaching.",
     facebook: "",
     twitter: "",
     google: "",
@@ -275,7 +299,7 @@ const agendaDay1 = [
     title: "Leadership & Team Building",
     time: "7:00 PM",
     details: "",
-    image: "",
+    image: "images/speakers/hany.jpg",
     speaker: "Hany Barakat",
     position : "Facebook",
   }
@@ -301,10 +325,12 @@ const agendaDay1 = [
   {
     title: "YOGA",
     time: "10:00 PM",
-    details: "",
-    image: "",
+    details: `
+“Being brought up by a yogi dad, has been such a rich experience that really fed my curiosity towards life and kept me on my toes, on a quest towards this human experience our soul is living”, In this one hour class, you will practice with her Ancient Indian Pranayama Practice (Breathing Techniques), a Meditative Asana Practice (Yoga Postures), and a Guided Meditation to wrap the practice up.
+`,
+    image: "images/speakers/Mayar_ElKorashy.jpg",
     speaker: "Mayar Elkorashy",
-    position : " ",
+    position : "yoga",
   }
   ,
 ]
@@ -344,7 +370,7 @@ const agendaDay2 = [
     image: "images/speakers/Yasmin_Helmy1.JPG",
     speaker: "Yasmin Helmy",
     position : "Instabug",
-  }/*
+  }
   ,
     {
     title: "Importance of Mobile Attribution and Optimisation	",
@@ -353,13 +379,13 @@ const agendaDay2 = [
     image: "",
     speaker: "Riyad Khalil",
     position : "Adjust",
-  }*/
+  }
   ,
     {
     title: "PR for startups (90 mins)",
     time: "05:00 PM",
     details: "",
-    image: "",
+    image: "images/speakers/Maha_Abouelenein.png",
     speaker: "Maha Abouelenein",
     position : "VAYNER X",
   }
@@ -395,7 +421,7 @@ const agendaDay2 = [
     title: "Rock band",
     time: "10:00 PM",
     details: "",
-    image: "",
+    image: "images/speakers/cairopathix.jpg",
     speaker: "CairoPathix",
     position : " ",
   }
