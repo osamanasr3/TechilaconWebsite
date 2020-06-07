@@ -323,14 +323,15 @@ const agendaDay1 = [
   }
   ,
   {
-    title: "YOGA",
+    title: "Meditative Movement",
     time: "10:00 PM",
-    details: `
-“Being brought up by a yogi dad, has been such a rich experience that really fed my curiosity towards life and kept me on my toes, on a quest towards this human experience our soul is living”, In this one hour class, you will practice with her Ancient Indian Pranayama Practice (Breathing Techniques), a Meditative Asana Practice (Yoga Postures), and a Guided Meditation to wrap the practice up.
-`,
+    details: `“Being brought up by a yogi dad, has been such a rich experience that\
+     really fed my curiosity towards life and kept me on my toes, on a quest towards this\
+      human experience our soul is living”, In this one hour class, you will practice with her Ancient\
+       Indian Pranayama Practice (Breathing Techniques), a Meditative Asana Practice (Yoga Postures), and a Guided Meditation to wrap the practice up.`,
     image: "images/speakers/Mayar_ElKorashy.jpg",
     speaker: "Mayar Elkorashy",
-    position : "yoga",
+    position : "Hatha Yoga",
   }
   ,
 ]
