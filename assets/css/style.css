@@ -3343,8 +3343,14 @@ input:checked + .slider:before {
 
 .schedules.home-12 .schedules-item h5 {
     margin: 10px 0px 15px;
-    font-size: 14px;
+    /*font-size: 14px;*/
     line-height: 20px;
+    text-align: center;
+    width: 100%;
+}
+.schedule-dropdown-element.active1 p{
+  text-align: center;
+
 }
 .schedules.home-12 .schedules-item h5 a {
     color: #121a51;
@@ -3361,16 +3367,23 @@ input:checked + .slider:before {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-around;
     padding-top: 15px;
 }
 .schedules.home-12 .schedules-item .schedule-person .schedule-person-img {
     margin-right: 15px;
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     border-radius: 100%;
     overflow: hidden;
 }
-.schedules.home-12 .schedules-item .schedule-person .schedule-desc {}
+.schedules.home-12 .schedules-item .schedule-person .schedule-desc {
+  width: calc(100% - 115px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .schedules.home-12 .schedules-item .schedule-person .schedule-desc h6 {
     margin: 0;
     font-size: 16px;

@@ -1,4 +1,4 @@
-const speakers = [
+const speakers=[
 
   {
     name: "Saif Ahmed",
@@ -204,7 +204,7 @@ const speakers = [
     pinterest: "",
   }
 ]
-const agendaDay1 = [
+const agendaDay1=[
   {
     title: "Welcoming & Briefing",
     time: "11:30 AM",
@@ -335,8 +335,7 @@ const agendaDay1 = [
   }
   ,
 ]
-
-const agendaDay2 = [
+const agendaDay2=[
   {
     title: "Welcoming & Briefing",
     time: "11:30 AM",
@@ -437,8 +436,8 @@ const agendaDay2 = [
   }
   ,
 ]
-function generateSpeakers()
-{
+
+function generateSpeakers(){
   const speakers_row = document.querySelector("#speakers-row");
   const speakers_cards = speakers.map( (speaker) => {
 
@@ -490,8 +489,7 @@ function generateSpeakers()
 
 }
 
-function generateAgenda(day,array)
-{
+function generateAgenda(day,array){
 
   const agenda_table = document.querySelector(day);
   const agenda_cards = array.map( (agendarow) => {
@@ -547,7 +545,7 @@ function generateAgenda(day,array)
     schedule_speaker.innerHTML = agendarow.speaker? `<a href="#">${agendarow.speaker} </a>`: '<a href="#">missing</a>';
 
 
-    const schedule_position = document.createElement("span");
+    const schedule_position = document.createElement("div");
     schedule_position.innerHTML = agendarow.position? `${agendarow.position}`: `missing`;
 
     schedule_desc.append(schedule_speaker);
@@ -557,7 +555,7 @@ function generateAgenda(day,array)
     schedule_content.append(schedule_content_text);
     agendarow.details? schedule_time_logo.append(schedule_icon): ``;
     schedule_head.append(schedule_title);
-    schedule_head.append(schedule_time);
+    schedule_desc.append(schedule_time);
     schedule_head.append(schedule_time_logo);
     schedule_head.append(schedule_content);
     schedule_item.append(schedule_head);
@@ -859,10 +857,9 @@ function generateAgenda(day,array)
             }
         },
     });
-
 })(jQuery);
 
-function submit_form() {
+function submit_form(){
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxsHWja2QzJCtQpR9LzWedX8Ld7XBcnAtyUppq9FWql5Lx3RQ/exec'
     const form = document.forms['submit-to-google-sheet']
     var firstName = document.getElementById("firstName").value;
@@ -890,7 +887,6 @@ function submit_form() {
     }
     event.preventDefault();
 }
-
 function validate(firstName,lastName,email,phone,message,position,companyName,know){
     var emailPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     var phonePattern = /^(010|011|012)[0-9]{8}$/;
@@ -987,8 +983,7 @@ function checkEmpty(firstName,lastName,email,phone,message,position,companyName,
     }
     return returnvalue;
 }
-function changeTickets()
-{
+function changeTickets(){
     var cb  = document.querySelector(".cb");
     var individualTickets = document.querySelector(".individual-tickets");
     var groupTickets = document.querySelector(".group-tickets");
@@ -1007,7 +1002,6 @@ function changeTickets()
         groupTickets.classList.add('hidden');
     }
  }
-
 function clearFormErrors(){
     var element;
     element = document.getElementById("error-firstname");
@@ -1027,8 +1021,7 @@ function clearFormErrors(){
     element = document.getElementById("error-know");
     element.style.display = "None";
 }
-
-function submit_mail() {
+function submit_mail(){
 
     event.preventDefault();
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxQ71AI1YFjBhrBRhCqjHzxHPIsRL3KQK5o43dyGB9sz76HTDI/exec'
@@ -1075,11 +1068,11 @@ function submit_mail() {
 
 
 }
-function openNav() {
+
+function openNav(){
   document.getElementById("myNav").style.height = "100%";
 }
-
-function closeNav() {
+function closeNav(){
   document.getElementById("myNav").style.height = "0%";
 }
 
