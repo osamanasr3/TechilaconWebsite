@@ -193,7 +193,7 @@ const speakers=[
     pinterest: "",
   },
   {
-    name: "Mayar ElKorashy",
+    name: "Mayar El Koshairy",
     title: "People Engagement Lead at Trella",
     image: "images/speakers/Mayar_ElKorashy.jpg",
     text: "Mayar is a Yoga Practitioner for as far as she remembers. Three years ago, she left everything behind and travelled to Rishekish, the Yoga Capital of the World in India to fulfill her passion towards Yoga Teaching.",
@@ -330,7 +330,7 @@ const agendaDay1=[
       human experience our soul is living”, In this one hour class, you will practice with her Ancient\
        Indian Pranayama Practice (Breathing Techniques), a Meditative Asana Practice (Yoga Postures), and a Guided Meditation to wrap the practice up.`,
     image: "images/speakers/Mayar_ElKorashy.jpg",
-    speaker: "Mayar Elkorashy",
+    speaker: "Mayar El Koshairy",
     position : "Hatha Yoga",
   }
   ,
