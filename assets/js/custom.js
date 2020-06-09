@@ -59,7 +59,7 @@ const speakers=[
   ,
     {
     name: "Arho Anttila ",
-    title: "General Manager Asia & Africa @ Pipedrive",
+    title: "General Manager Asia & Africa at Pipedrive",
     image: "images/speakers/Arho_Anttila.jpg",
     text: "Arho is a seasoned business manager with over 30 years of experience in developing international business.\
      Arho is an early employee at Pipedrive where his first task was to set up and launch the company’s channel partner\
@@ -103,7 +103,7 @@ const speakers=[
     name: "Hany Barakat",
     title: "Enineering Manager - Facebook",
     image: "images/speakers/hany.jpg",
-    text: "An engineering manager @ Facebook with experience leading multiple teams\
+    text: "An engineering manager at Facebook with experience leading multiple teams\
      that tackle hard problems with full stack experience ranging from mobile development\
       to high availability and high performance online services. Hany has a passion to grow individuals and build more effective teams.",
     facebook: "",
@@ -182,7 +182,7 @@ const speakers=[
   {
     name: "Ahmed ElMeleegy",
     title: "Instabug - Business Advisor",
-    image: "images/speakers/Ahmed_ELMeleegy.jpeg",
+    image: "images/speakers/Ahmed_ElMeleegy.jpeg",
     text: "Ahmed is passionate about talking to customers, helping them realize value,\
      and watching them become champions. He joined Instabug in 2019 as the second sales hire,\
       and has watched our sales process evolve and change. He’ll be talking about how to structure a sales cycle.",
@@ -191,7 +191,173 @@ const speakers=[
     google: "",
     dribbble: "",
     pinterest: "",
+  }
+  ,
+  {
+    name: "Mustafa Eid",
+    title: "CTO at XPay and Co-Founder at Bteekh.com",
+    image: "images/speakers/Mustafa_Eid.jpg",
+    text: "An entrepreneur with diverse technical experience. He was the CEO of Egyncy: a bootstrapped entertainment tech company, the former co-founder and CTO of 3elag: a pharmaceutical e-commerce platform, and tech lead for Uno Insights: a shopping gamification and business analytics company.",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  }
+  ,
+  {
+    name: "Omar Mohamed",
+    title: "CEO & Founder | Spreadit",
+    image: "images/speakers/Omar_Mohamed.jpg",
+    text: "E commerce Marketing Expert , Omar is an eCommerce expert with years of experience running several affiliate campaigns and multi-million stores in Egypt and Gulf. Omar is specially interested in building and optimizing eCommerce sales funnels for companies of different industries and sizes.",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
   },
+  {
+    name: "Mahmoud Khalifa",
+    title: "General Manager at Hive Society",
+    image: "images/speakers/Mahmoud_Khalifa.png",
+    text: "Co-Founder & CEO at Hive Society. Mahmoud started his own digital marketing agency ( Hive Society ) with his Co-Founders Nabil Khalifa & Hussien Ali specializing in E-commerce. Their experience in e-commerce exposed them to manage a wide variety of online businesses where they managed to achieve breaking online sales numbers and they are now managing some of the biggest fashion online stores in Egypt.",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  }
+  ,
+  {
+    name: "Justin Nealey",
+    title: "Senior Project Manager for the Partners Audience at GoDaddy",
+    image: "images/speakers/Nealey.png",
+    text: "Nealey helps create and run effective projects to help grow the Web Designer and Developer audience at GoDaddy. He is also co-president of their employee resource group empowering employees to run their own side hustles and an experience WordPress designer",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  }
+  ,
+  {
+    name: "Omar El Metwally",
+    title: "General Manager at Sigma Fit",
+    image: "images/speakers/Omar_ElMetwally.jpg",
+    text: "He started his entrepreneurship journey back in 2016 when he started Sigma-Fit aiming to change how people ever thought about clothing and create a new wording called Tech Wear. After expanding the company to the US & Kuwait he have designed multiple products from cooling fabrics to patented self-cleaning bags and much more.",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  },
+  {
+    name: "Sehaj Singh",
+    title: "Leading startup program at Segment",
+    image: "images/speakers/Sehaj_Singh.jpg",
+    text: "He is a part of the Indian startup ecosystem. He have led teams, launched new category products and built processes to understand the customer better, holistically. His last stint was with innov8 co-working, where he was a part of the leadership group.",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  }
+  ,
+  {
+    name: "Justin Nealey",
+    title: "Senior Project Manager for the Partners Audience at GoDaddy",
+    image: "images/speakers/Nealey.png",
+    text: "Nealey helps create and run effective projects to help grow the Web Designer and Developer audience at GoDaddy. He is also co-president of their employee resource group empowering employees to run their own side hustles and an experience WordPress designer",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  }
+  ,
+  {
+    name: "Riyad Khalil",
+    title: "Adjust",
+    image: "images/speakers/Riyad_Khalil.jpg",
+    text: "Riyad Khalil Sales Manager for the Middle East and Africa at Adjust. For the last 3 years, I have been helping regional advertisers track their performance channels and increase their ROI using granular campaign reporting and optimisation.",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  }
+  ,
+  {
+    name: "Johannes Radig",
+    title: "Growth Freelancer & 500 Startups Mentor",
+    image: "images/speakers/JR.jpg",
+    text: "Johannes is a growth & marketing practitioner with over 10 years of experience from PayPal and numerous start-ups. As a mentor for 500 Startups, he’s worked with over 50 startups in the MENA region to help them solve growth challenges across all channels.",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  }
+  ,
+  {
+    name: "Sanjay Mishra",
+    title: "Microsoft",
+    image: "images/speakers/Sanjay_Mishra.jpg",
+    text: "Sanjay Mishra is a product leader in Microsoft Azure Data. He leads product management and program management for the Azure SQL Database team, which includes the products such as Azure SQL DB, SQL Hyperscale, Elastic Pools, etc. Prior to this role, has served as a Technical Advisor to the VP of Azure Data PM, and led the eminent SQLCAT and DataCAT teams.",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  },
+  {
+    name: "Ahmed Adel",
+    title: "EGDroid, Zendesk",
+    image: "images/speakers/Ahmed_Adel.jpg",
+    text: "I am an Android Software Engineer, Consultant, and Architect from Egypt, currently living in Dublin, Ireland. Currently, Senior Software Engineer @Zendesk, Co-Founder and Mentor @EGDroid. Former @Swvl, @Eventtus, @DigitalYard, and @StarWalletLabs.",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  }
+  ,
+  {
+    name: "Nouran Hassan",
+    title: "Senior product manager in Delivery Hero MENA(Talbat), Co-founder of Product Guys",
+    image: "images/speakers/Nouran_hassan.jpg",
+    text: " Co-founder of product guys & senior product manager in Delivery hero MENA (Talabat) with 12 years of experience working on telecom , e-commerce and self service solutions. A demonstrated history in building digital solutions, leading digital transformation programs and leading cross functional teams.",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  }
+  ,
+  {
+    name: "Iman Elnashar",
+    title: "Head of digital product B.TECH | Professional Coach, Agile Coach, Founder of Product Guys",
+    image: "images/speakers/Iman.jpg",
+    text: "Head of Digital Products at B.TECH, agile coach & founder of Product Guys. Passionate about building teams, creating lovable products.",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  }
+  ,
+  {
+    name: "Irene George",
+    title: "Product manager at Dell technologies, Agile Coach, Co-founder of Product Guys",
+    image: "images/speakers/Irene.jpg",
+    text: "Product manager at Dell Technologies with 6 years of experience working on telecom and information infrastructure industries.",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  }
+  ,
   {
     name: "Mayar El Koshairy",
     title: "People Engagement Lead at Trella",
@@ -203,6 +369,7 @@ const speakers=[
     dribbble: "",
     pinterest: "",
   }
+
 ]
 const agendaDay1=[
   {
