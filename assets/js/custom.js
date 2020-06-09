@@ -1243,6 +1243,6 @@ function closeNav(){
   document.getElementById("myNav").style.height = "0%";
 }
 
-generateSpeakers();
+generateSpeakers();/*
 generateAgenda("#schedule-day1",agendaDay1);
-generateAgenda("#schedule-day2",agendaDay2);
+generateAgenda("#schedule-day2",agendaDay2);*/
