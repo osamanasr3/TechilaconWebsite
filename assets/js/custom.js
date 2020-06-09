@@ -4,7 +4,7 @@ const speakers=[
     name: "Saif Ahmed",
     title: "Co-founder at Widebot",
     image: "images/speakers/Saif_Ahmed.jpg",
-    text: "Saif Ahmed is the co-founder and CPO of WideBot, and a maintainer of WideBot platform,\
+    text: "Saif is the co-founder and CPO of WideBot, and a maintainer of WideBot platform,\
      The First Arabic-Focused Bot Builder Platform. He focuses on empowering business to build the\
       best possible conversational experiences and has years of experience building AI products in industry.",
     facebook: "",
