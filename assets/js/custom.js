@@ -2,7 +2,7 @@ const speakers=[
 
   {
     name: "Saif Ahmed",
-    title: "CPO at Widebot",
+    title: "Co-founder at Widebot",
     image: "images/speakers/Saif_Ahmed.jpg",
     text: "Saif Ahmed is the co-founder and CPO of WideBot, and a maintainer of WideBot platform,\
      The First Arabic-Focused Bot Builder Platform. He focuses on empowering business to build the\
@@ -18,7 +18,7 @@ const speakers=[
     name: "Roberto Crocei",
     title: "Microsoft",
     image: "images/speakers/Roberto_Crocei.jpg",
-    text: "Roberto Croci, He is integral as the Regional Managing director at Microsoft for startups Middle East,\
+    text: "Roberto is integral as the Regional Managing director at Microsoft for startups Middle East,\
      in helping startups achieve their goals by promoting their tech solutions through digital and social campaigns,\
       opening up the right opportunities for growth, customizing a market plan to  maximize joint marketing with Microsoft\
        and providing a targeted industry co-marketing and account planning.",
