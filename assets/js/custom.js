@@ -264,18 +264,6 @@ const speakers=[
   }
   ,
   {
-    name: "Justin Nealey",
-    title: "Senior Project Manager for the Partners Audience at GoDaddy",
-    image: "images/speakers/Nealey.png",
-    text: "Nealey helps create and run effective projects to help grow the Web Designer and Developer audience at GoDaddy. He is also co-president of their employee resource group empowering employees to run their own side hustles and an experience WordPress designer",
-    facebook: "",
-    twitter: "",
-    google: "",
-    dribbble: "",
-    pinterest: "",
-  }
-  ,
-  {
     name: "Riyad Khalil",
     title: "Adjust",
     image: "images/speakers/Riyad_Khalil.jpg",
@@ -290,7 +278,7 @@ const speakers=[
   {
     name: "Johannes Radig",
     title: "Growth Freelancer & 500 Startups Mentor",
-    image: "images/speakers/JR.jpg",
+    image: "images/speakers/JR.jpeg",
     text: "Johannes is a growth & marketing practitioner with over 10 years of experience from PayPal and numerous start-ups. As a mentor for 500 Startups, he’s worked with over 50 startups in the MENA region to help them solve growth challenges across all channels.",
     facebook: "",
     twitter: "",
@@ -314,7 +302,7 @@ const speakers=[
     name: "Ahmed Adel",
     title: "EGDroid, Zendesk",
     image: "images/speakers/Ahmed_Adel.jpg",
-    text: "I am an Android Software Engineer, Consultant, and Architect from Egypt, currently living in Dublin, Ireland. Currently, Senior Software Engineer @Zendesk, Co-Founder and Mentor @EGDroid. Former @Swvl, @Eventtus, @DigitalYard, and @StarWalletLabs.",
+    text: "Ahmed is an Android Software Engineer, Consultant, and Architect from Egypt, currently living in Dublin, Ireland. Currently, Senior Software Engineer atZendesk, Co-Founder and Mentor at EGDroid. Former at Swvl, at Eventtus, at DigitalYard, and at StarWalletLabs.",
     facebook: "",
     twitter: "",
     google: "",
