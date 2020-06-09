@@ -76,9 +76,7 @@ const speakers=[
     title: "Co founder of FMF",
     image: "images/speakers/Ali_Abou_El Nasr.jpeg",
     text: "Co-founded “Find Me Football”  They were voted joint 2nd best application in Africa by the African Application\
-     Luanchpad and were honored by the Egyptian President for our work. Along the way, they also helped bring football\
-      statistics to Egypt and work with the national team on their journey to the World Cup and worked as an assistant\
-       to Alex McLeish and a translator for other coaches at Zamalek Football club.",
+     Luanchpad and were honored by the Egyptian President for our work. He worked as an assistant to Alex McLeish and a translator for other coaches at Zamalek Football club.",
     facebook: "",
     twitter: "",
     google: "",
