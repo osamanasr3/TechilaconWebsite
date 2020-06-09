@@ -324,7 +324,7 @@ const speakers=[
   ,
   {
     name: "Iman Elnashar",
-    title: "Head of digital product B.TECH | Professional Coach, Agile Coach, Founder of Product Guys",
+    title: "Head of Digital Products B.TECH | Professional Coach, Agile Coach, Founder of Product Guys",
     image: "images/speakers/Iman.jpg",
     text: "Head of Digital Products at B.TECH, agile coach & founder of Product Guys. Passionate about building teams, creating lovable products.",
     facebook: "",
