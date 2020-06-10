@@ -298,9 +298,10 @@ const speakers=[
   },
   {
     name: "Ahmed Adel",
-    title: "EGDroid, Zendesk",
+    title: "Co-Founfer of EGDroid, and Senior Software Engineer at Zendesk.",
     image: "images/speakers/Ahmed_Adel.jpg",
-    text: "Ahmed is an Android Software Engineer, Consultant, and Architect from Egypt, currently living in Dublin, Ireland. Currently, Senior Software Engineer atZendesk, Co-Founder and Mentor at EGDroid. Former at Swvl, at Eventtus, at DigitalYard, and at StarWalletLabs.",
+    text: "Co-Founfer of EGDroid, and Senior Software Engineer at Zendesk. \
+Ahmed has 8 years of experience in Mobile Development and Architecture at fastest growing startups in MENA; Swvl, Evennttus, DigitalYard, StarWalletLabs",
     facebook: "",
     twitter: "",
     google: "",
@@ -368,21 +369,12 @@ const agendaDay1=[
   }
   ,
     {
-    title: "Cost Optimization for Startups	",
+    title: "First Principles Thinking. Back to Basics.",
     time: "12:00 PM",
     details: "",
     image: "images/speakers/Roberto_Crocei.jpg",
     speaker: "Roberto Crocei",
     position : "Microsoft",
-  }
-  ,
-  {
-    title: "CRM for Startups",
-    time: "1:00 PM",
-    details: "Cost Management is one of the Five Disciplines of Cloud Governance within the Cloud Adoption Framework governance model. Based on field experiences and real life scenarios, this session will help you understand common pitfalls to avoid and realize significant reductions in the total cost of ownership for your Cloud Solutions.",
-    image: "images/speakers/Arho_Anttila.jpg",
-    speaker: "Arho Anttila",
-    position : "Pipedrive",
   }
   ,
   {
@@ -395,10 +387,19 @@ const agendaDay1=[
   }
   ,
   {
-    title: "E-commerce & Business Masterclass",
+    title: "Django superpower: user dashboards",
     time: "2:00 PM",
+    details: "One of the most powerful parts of Django is the automatic admin interface. In this talk, I’ll show you how to extend it to be a dashboard for all your users, not just your product’s superusers.",
+    image: "images/speakers/Mustafa_Eid.jpg",
+    speaker: "Mustafa Eid",
+    position : "Xpay",
+  }
+  ,
+  {
+    title: "E-commerce & Business Masterclass",
+    time: "3:00 PM",
     details: "Product Design - From Shoppers to Buyers",
-    image: "",
+    image: "images/speakers/Omar_ElMetwally.jpg",
     speaker: "Omar El Metwally",
     position : "Cairo Angels - Sigma Fit",
   }
@@ -407,16 +408,16 @@ const agendaDay1=[
     title: "E-commerce & Business Masterclass",
     time: "3:00 PM",
     details: "Creating E-commerce Sales Funnel",
-    image: "",
+    image: "images/speakers/Mahmoud_Khalifa.png",
     speaker: "Mahmoud Khalifa",
     position : "Cairo Angels - Hive Society",
   }
   ,
   {
     title: "E-commerce & Business Masterclass",
-    time: "4:00 PM",
+    time: "3:00 PM",
     details: "Market Opportunities in E-commerce",
-    image: "",
+    image: "images/speakers/Omar_Mohamed.jpg",
     speaker: "Omar Mohamed",
     position : "Cairo Angels - Spreadit",
   }
@@ -443,7 +444,7 @@ const agendaDay1=[
     title: "Unifying Your Data Streams",
     time: "6:00 PM",
     details: "",
-    image: "",
+    image: "images/speakers/Sehaj_Singh.jpg",
     speaker: "Sehaj",
     position : "Segment",
   }
@@ -458,12 +459,21 @@ const agendaDay1=[
   }
   ,
   {
-    title: "Introduction to Pipedrive",
+    title: "How to use WordPress to launch your side hustle without being a web design guru",
     time: "8:00 PM",
-    details: "",
-    image: "images/speakers/Max_Wright.jpg",
-    speaker: "Max Wright",
-    position : "Pipedrive",
+    details: "A website is a must for any successful startup or business, but there are too many choices and not all platforms have the flexibility you need. WordPress and a few recommended plugins to create almost any type of website that helps you grow your side hustle. In this session, learn from a WordPress designer — and co-president of GoDaddy’s employee resource that empowers employees to run their own side hustle — how you can create a professional WordPress site to launch your side hustle. After this session, you will walk away knowing: How to navigate the WordPress dashboard A Side Hustler’s startup plugins checklist to design, market, and grow your website  How to design your new website ",
+    image: "images/speakers/Nealey.png",
+    speaker: "Justin Nealey",
+    position : "GoDaddy",
+  }
+  ,
+  {
+    title: "Startups Guide to Mobile Development Workflow",
+    time: "8:00 PM",
+    details: " Buidling a Mobile Enviroment/Workflow in Startups. The points/topics that I am going to talk about are: - Let's Start with The Startup Idea First. - Cross or Native!  - Do we need an Architect or Consultant? - The Mobile Team Structure in Startups. - Mobile Automation Tools.",
+    image: "images/speakers/Ahmed_Adel.jpg",
+    speaker: "Ahmed Adel",
+    position : "EGDroid | Zendesk",
   }
   ,
   {
@@ -501,10 +511,19 @@ const agendaDay2=[
     {
     title: "Cost Optimization for Cloud Solutions",
     time: "12:00 PM",
-    details: "",
+    details: "Cost Management is one of the Five Disciplines of Cloud Governance within the Cloud Adoption Framework governance model. Based on field experiences and real life scenarios, this session will help you understand common pitfalls to avoid and realize significant reductions in the total cost of ownership for your Cloud Solutions.",
     image: "images/speakers/Punit_Shah.jpg",
     speaker: "Punit",
     position : "Microsoft",
+  }
+  ,
+    {
+    title: "How startups crush Facebook ads",
+    time: "12:00 PM",
+    details: "I’ve seen the same story, time and time again: Startups wasting thousands of dollars and precious time making critical mistakes when starting out with Facebook and Instagram Ads. Using my hands-on experience working with dozens of startups on their ads, I’ll teach you how to succeed by avoiding the mistakes 95% of startups regularly make.",
+    image: "images/speakers/JR.jpeg",
+    speaker: "Johannes Radig",
+    position : "500 Startups",
   }
   ,
     {
@@ -528,10 +547,19 @@ const agendaDay2=[
     {
     title: "Importance of Mobile Attribution and Optimisation	",
     time: "3:00 PM",
-    details: "",
-    image: "",
+    details: "The mobile app ecosystem has become very complicated. How can utilise your attribution partner in the best way to optimise your budget and increase your users’ LTV?",
+    image: "images/speakers/Riyad_Khalil.jpg",
     speaker: "Riyad Khalil",
     position : "Adjust",
+  }
+  ,
+  {
+    title: "CRM for Startups",
+    time: "4:00 PM",
+    details: "Cost Management is one of the Five Disciplines of Cloud Governance within the Cloud Adoption Framework governance model. Based on field experiences and real life scenarios, this session will help you understand common pitfalls to avoid and realize significant reductions in the total cost of ownership for your Cloud Solutions.",
+    image: "images/speakers/Arho_Anttila.jpg",
+    speaker: "Arho Anttila",
+    position : "Pipedrive",
   }
   ,
     {
@@ -544,12 +572,30 @@ const agendaDay2=[
   }
   ,
     {
+    title: "Azure SQL Database – The Database of Choice",
+    time: "06:00 PM",
+    details: "This session will cover the foundation of the Azure SQL Database service (the most matured PaaS offering on Azure), and showcase through multiple demos, why it is a database of choice for a variety of applications. Will cover various modern application use cases and customer examples.",
+    image: "images/speakers/Sanjay_Mishra.jpg",
+    speaker: "Sanjay Mishra",
+    position : "Microsoft",
+  }
+  ,
+    {
     title: "The Test Automation Challenges with Mobile Apps Development",
     time: "07:00 PM",
     details: "",
     image: "images/speakers/Moataz_Nabil.png",
     speaker: "Moataz Nabil",
     position : "Delivery Hero",
+  }
+  ,
+  {
+    title: "Introduction to Pipedrive",
+    time: "8:00 PM",
+    details: "",
+    image: "images/speakers/Max_Wright.jpg",
+    speaker: "Max Wright",
+    position : "Pipedrive",
   }
   ,
     {
@@ -562,20 +608,23 @@ const agendaDay2=[
   }
   ,
     {
-    title: "Product Guys Panel - Product Launch in tough times/ stressful times",
+    title: "Product Launch in tough times/ stressful times",
     time: "09:00 PM",
-    details: "",
-    image: "",
-    speaker: "Product Guys",
-    position : " ",
+    details: "So , who of us were not placed in the pressure of a critical business need & the delivery timelines?\
+In times like this, where all roadmaps go volatile and you need to respond to the changes around you in the smartest & least time to avoid losing market opportunities. \
+Join our highly interactive forum to share and listen to experiences related to rapid product launches, ways to prfioritize and on what basis. And the most missed question, what's next after you achieve that? \
+I bet most of us can related, especially in 2020 - So excited to discuss this hot topic with you!",
+    image: "images/speakers/product.png",
+    speaker: "Nouran Abdallah - Iman ElNashar - Irene George",
+    position : "Product Guys",
   }
   ,
     {
-    title: "Rock band",
+    title: "Entertainment",
     time: "10:00 PM",
     details: "",
-    image: "images/speakers/cairopathix.jpg",
-    speaker: "CairoPathix",
+    image: "images/speakers/show.png",
+    speaker: " ",
     position : " ",
   }
   ,
@@ -688,7 +737,7 @@ function generateAgenda(day,array){
 
     const schedule_person_img = document.createElement("div");
     schedule_person_img.classList.add('schedule-person-img');
-    schedule_person_img.innerHTML = agendarow.image? `<img src="${agendarow.image}" alt="schedule">`: `<img src="images/23-06-19/schedule/01.jpg" alt="schedule">`;
+    schedule_person_img.innerHTML = agendarow.image? `<img src="${agendarow.image}" alt="schedule">`: `<img src="images/speakers/speaker_01.jpg" alt="schedule">`;
 
 
     const schedule_desc = document.createElement("div");
@@ -1229,6 +1278,6 @@ function closeNav(){
   document.getElementById("myNav").style.height = "0%";
 }
 
-generateSpeakers();/*
+generateSpeakers();
 generateAgenda("#schedule-day1",agendaDay1);
-generateAgenda("#schedule-day2",agendaDay2);*/
+generateAgenda("#schedule-day2",agendaDay2);
