@@ -383,7 +383,7 @@ const agendaDay1=[
     {
     title: "First Principles Thinking. Back to Basics.",
     time: "12:00 PM",
-    details: "",
+    details: "First principles and back to basics thinking, which is sometimes called reasoning from first principles, is one of the most effective strategies you can employ for breaking down complicated problems and generating original solutions.Roberto will tell us more about that at Techila Con Online.",
     image: "images/speakers/Roberto_Crocei.jpg",
     speaker: "Roberto Crocei",
     position : "Microsoft",
@@ -392,7 +392,7 @@ const agendaDay1=[
   {
     title: "Build a Digital Presence with GoDaddy",
     time: "1:00 PM",
-    details: "",
+    details: "Wondering how you start to build a strong online presence for your business if you’ve only got a shoestring budget? Selina Bieber is here to help.",
     image: "images/speakers/Selina_Bieber.jpg",
     speaker: "Selina Bieber",
     position : "Go Daddy",
@@ -437,7 +437,8 @@ const agendaDay1=[
   {
     title: "Product Management  V.S Product Ownership	",
     time: "4:00 PM",
-    details: "",
+    details: "What is the difference between the product owner and the product manager? Does the product manager rank higher in the organization than the product owner? Do we need both? \
+With so much debate over the roles of the product owner and the product manager, it’s finally time to unpack these questions in detail by Saif Ahmed.",
     image: "images/speakers/Saif_Ahmed.jpg",
     speaker: "Saif Ahmed",
     position : "WideBot",
@@ -446,7 +447,7 @@ const agendaDay1=[
   {
     title: "Customer Engagement - A Startup Guide",
     time: "5:00 PM",
-    details: "",
+    details: "Building a product that people want is only part of building a great company. A key part that a lot of founders overlook is how to attract, engage, acquire and retain customers. This talk will go through the key things you need to know about customer engagement using Twilio and Sendgrid to help your startup on it’s way to success by Frank  Yaw-Owusu. Focus will be on SMS, WhatsApp, emails & more.",
     image: "images/speakers/Frank_Yaw-Owusu.png",
     speaker: "Frank",
     position : "Twilio",
@@ -455,7 +456,7 @@ const agendaDay1=[
   {
     title: "Unifying Your Data Streams",
     time: "6:00 PM",
-    details: "",
+    details: "Towards a unifying data theory and practice, how to combine operations, analytics, and streaming discussed by Sehaj",
     image: "images/speakers/Sehaj_Singh.jpg",
     speaker: "Sehaj",
     position : "Segment",
@@ -464,7 +465,7 @@ const agendaDay1=[
   {
     title: "Leadership & Team Building",
     time: "7:00 PM",
-    details: "",
+    details: "So you know you want to become a better leader by and through making an effort to strengthen, and build-out your team. But how to start and how to go about it? by Hany Barakat",
     image: "images/speakers/hany.jpg",
     speaker: "Hany Barakat",
     position : "Facebook",
@@ -491,7 +492,7 @@ const agendaDay1=[
   {
     title: "Value Now, Money Later",
     time: "9:00 PM",
-    details: "",
+    details: "Welcome to the world of the time value money later! Why was the first question so simple, and the second question so complicated? will be discussed more by Ahmed elmelegy",
     image: "images/speakers/Ahmed_ElMeleegy.jpeg",
     speaker: "Ahmed ElMeleegy",
     position : "Instabug",
@@ -541,7 +542,7 @@ const agendaDay2=[
     {
     title: "Email Marketing for Startups",
     time: "1:00 PM",
-    details: "",
+    details: "Email is the ultimate tool for startups and entrepreneurs because it helps you communicate to your early subscriber base and build your brand. Whether sharing your monthly startup newsletter, product betas and releases. Casper Ackermann will talk more about how email is going to be integral to connecting with your audience and many more!",
     image: "images/speakers/Casper.jpg",
     speaker: "Casper Ackermann",
     position : "Ackermann",
@@ -550,7 +551,7 @@ const agendaDay2=[
     {
     title: "Defining the Metrics that matters",
     time: "2:00 PM",
-    details: "",
+    details: "Defining the metrics that matters and know which metrics will and won’t help drive campaign success, and keep pace with the evolution of digital measurement by Yasmine Helmy.",
     image: "images/speakers/Yasmin_Helmy1.JPG",
     speaker: "Yasmin Helmy",
     position : "Instabug",
@@ -577,7 +578,7 @@ const agendaDay2=[
     {
     title: "PR for startups (90 mins)",
     time: "05:00 PM",
-    details: "",
+    details: "Getting your message into the media is pivotal for startups in raising their brand profile, which is of course crucial to attracting investment, customers and talent. Now is a critical time for companies to revitalize, and how to ace their PR strategy and objectives that companies should prioritize.",
     image: "images/speakers/Maha_Abouelenein.png",
     speaker: "Maha Abouelenein",
     position : "VAYNER X",
@@ -604,7 +605,7 @@ const agendaDay2=[
     {
     title: "The Test Automation Challenges with Mobile Apps Development",
     time: "07:00 PM",
-    details: "",
+    details: "developing your mobile app is just the beginning. That takes a lot of mobile testing. The only way to cover it all is with test automation, its challenges and solutions by Moataz Nabil.",
     image: "images/speakers/Moataz_Nabil.png",
     speaker: "Moataz Nabil",
     position : "Delivery Hero",
@@ -613,7 +614,7 @@ const agendaDay2=[
   {
     title: "Introduction to Pipedrive",
     time: "8:00 PM",
-    details: "",
+    details: "Pipedrive is a customer management system on the cloud, which will help you to keep track of your leads or prospects and current customers, but it also helps you to execute activities for taking a customer from an initial phase to submitting a proposal and closing a deal with a sale. You can also get more out of this by Max Wright.",
     image: "images/speakers/Max_Wright.jpg",
     speaker: "Max Wright",
     position : "Pipedrive",
@@ -622,7 +623,8 @@ const agendaDay2=[
     {
     title: "Digital Transformation in Sports",
     time: "08:00 PM",
-    details: "",
+    details: "To sports fans, 'digital' is the sum of all on-demand ways they can interact with their favorite team, league or event. Social media, in particular, gave fans a collective voice and power in the relationship and making fan engagement, alot will be discussed by Ali Abou El Nasr. \
+On the sports business side - and like the iceberg imagery where only the tip is visible - digital is so much more than fan-facing touch points.",
     image: "images/speakers/Ali_Abou_El Nasr.jpeg",
     speaker: "Ali Abou Elnasr",
     position : "Find Me Football",
