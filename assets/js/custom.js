@@ -397,7 +397,7 @@ const agendaDay1=[
   ,
   {
     title: "E-commerce & Business Masterclass",
-    time: "3:00 PM",
+    time: "2:00 PM",
     details: "Product Design - From Shoppers to Buyers",
     image: "images/speakers/Omar_ElMetwally.jpg",
     speaker: "Omar El Metwally",
@@ -415,7 +415,7 @@ const agendaDay1=[
   ,
   {
     title: "E-commerce & Business Masterclass",
-    time: "3:00 PM",
+    time: "4:00 PM",
     details: "Market Opportunities in E-commerce",
     image: "images/speakers/Omar_Mohamed.jpg",
     speaker: "Omar Mohamed",
