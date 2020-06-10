@@ -356,6 +356,18 @@ Ahmed has 8 years of experience in Mobile Development and Architecture at fastes
     dribbble: "",
     pinterest: "",
   }
+  ,
+  {
+    name: "Aadil Razvi",
+    title: "Founding Team at Demand Curve (YC S19). Growth + Sales + Community ",
+    image: "images/speakers/Aadil_Razvi.jpg",
+    text: "Aadil is the Head of Sales at Demand Curve, a Y Combinator-backed company that teaches growth to some of the fastest-growing companies in the world like Microsoft, Perfect Keto, Clearbit, and Segment. He also leads Demand Curve’s exclusive community of thousands of senior growth marketers.",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  }
 
 ]
 const agendaDay1=[
@@ -578,6 +590,15 @@ const agendaDay2=[
     image: "images/speakers/Sanjay_Mishra.jpg",
     speaker: "Sanjay Mishra",
     position : "Microsoft",
+  }
+  ,
+    {
+    title: "The Top 15 Growth Tactics of 2020",
+    time: "06:00 PM",
+    details: "In this talk, I’ll share 15 of the best growth tactics Demand Curve has used and sourced from our senior growth marketer community.",
+    image: "images/speakers/Aadil_Razvi.jpg",
+    speaker: "Aadil Razvi",
+    position : "Demand Curve",
   }
   ,
     {
