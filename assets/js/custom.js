@@ -699,6 +699,15 @@ I bet most of us can related, especially in 2020 - So excited to discuss this ho
     position : "Product Guys",
   }
   ,
+  {
+  title: "Entertainment",
+  time: "10:00 PM",
+  details: "",
+  image: "images/speakers/show.png",
+  speaker: " ",
+  position : " ",
+}
+,
     {
     title: "Event Closing",
     time: "11:00 PM",
