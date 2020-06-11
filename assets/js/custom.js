@@ -325,7 +325,7 @@ Ahmed has 8 years of experience in Mobile Development and Architecture at fastes
     name: "Iman Elnashar",
     title: "Head of Digital Products B.TECH | Professional Coach, Agile Coach, Founder of Product Guys",
     image: "images/speakers/Iman.jpg",
-    text: "Head of Digital Products at B.TECH, agile coach & founder of Product Guys. Passionate about building teams, creating lovable products.",
+    text: "Passionate about building teams & creating lovable products. I get inspired from people and i always believe that everyone you meet knows something you don’t ",
     facebook: "",
     twitter: "",
     google: "",
