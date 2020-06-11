@@ -508,7 +508,7 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
     background-image:url(../../images/Cover.jpg);
     background-position:center;
     background-size:cover;
-    height:975px;
+    height: 1000px;
     position:relative;
     overflow:hidden
 }
@@ -840,7 +840,7 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
     color:#d50dad
 }
 .banner-nine{
-    max-height:480px;
+    max-height:500px;
 }
 .banner-nine .banner-overlay{
     background-color: black;
