@@ -2746,7 +2746,8 @@ input:checked+.slider:before{
     margin-bottom: 20px;
 }
 .pricing .pricing-item.first{
-    background-color: rgb(94,199,243);
+    background-color: #5f1c10;
+    text-align: center;
 }
 .pricing .pricing-item.third{
     background-color: #969;
