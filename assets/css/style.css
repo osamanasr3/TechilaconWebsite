@@ -505,12 +505,8 @@ nav.main-menu.menu-six.menu-fixed.dark-home-defult.menu-six-bg {
     padding-top: 90px;
 }
 .banner{
-    background-image:url(../../images/backgrounds/bg-banner.jpg);
-    background-position:50% 50%;
-    background-size:cover;
-    height:975px;
-    position:relative;
-    overflow:hidden
+    height:90px;
+    background: #000;
 }
 .banner .banner-overlay{
     position:absolute;
