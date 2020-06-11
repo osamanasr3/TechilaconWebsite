@@ -368,6 +368,54 @@ Ahmed has 8 years of experience in Mobile Development and Architecture at fastes
     dribbble: "",
     pinterest: "",
   }
+  ,
+  {
+    name: "Rawiah Abdallah",
+    title: "Founding TeamAdvisory Board Member at Pegasus Operational Excellence",
+    image: "images/speakers/Rawiah_Abdallah.jpg",
+    text: "  Strategy advisor and operating executive with 15 years of Management of high growth companies and top tier Strategy Consulting Experience including BCG, Uber, AUC and Endeavor. MBA Holder from Harvard Business School (HBS), and a Bachelor of Arts with double major in Business Administration & Journalism and Mass Communication (AUC) ",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  }
+  ,
+  {
+    name: "Jonny Dungay",
+    title: "Partner Engineer at Looker",
+    image: "images/speakers/Jonny_Dungay.jpg",
+    text: " Technical engineer based in London, building partner alliances and enabling data-driven customer success. Come to me with any technical questions on the Looker data platform! ",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  }
+  ,
+  {
+    name: "Craig Arrigan",
+    title: "Account Executive at Looker",
+    image: "images/speakers/craig.png",
+    text: " Regional lead for startups using Looker in Google Cloud. Craig specializes in helping startups scale their operations grow revenue streams through the use of data",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  }
+  ,
+  {
+    name: "Ahmed Refaay",
+    title: "Advisory Board Members at Pegasus Operational Excellence @ Pegasus Operational Excellence",
+    image: "images/speakers/Ahmed_Refaay.png",
+    text: "Ahmed holds Several Engineering and Operational Excellence positions regionally and locally. Ahmed’s Experience includes Proctor & Gamble, General Electric, and Pegasus Operational Excellence in Multiple regions and roles in Africa, Middle East, Turkey, Russia & CIS countries.",
+    facebook: "",
+    twitter: "",
+    google: "",
+    dribbble: "",
+    pinterest: "",
+  }
 
 ]
 const agendaDay1=[
@@ -423,6 +471,15 @@ const agendaDay1=[
     image: "images/speakers/Mahmoud_Khalifa.png",
     speaker: "Mahmoud Khalifa",
     position : "Cairo Angels - Hive Society",
+  }
+  ,
+  {
+    title: "Powering Data Experiences To Drive Growth",
+    time: "3:00 PM",
+    details: " Overview of the Looker platform and How organizations globally are driving revenue by creating data experiences <br/> Followed by a complete Demo of the Looker platform",
+    image: "images/speakers/Looker.png",
+    speaker: "Rawiah Abdallah - Craig Arrigan <br/> Jonny Dungay - Ahmed Refaay",
+    position : "Looker - Pegasus Operational Excellence",
   }
   ,
   {
@@ -640,15 +697,6 @@ I bet most of us can related, especially in 2020 - So excited to discuss this ho
     image: "images/speakers/product.png",
     speaker: "Nouran Abdallah - Iman ElNashar - Irene George",
     position : "Product Guys",
-  }
-  ,
-    {
-    title: "Entertainment",
-    time: "10:00 PM",
-    details: "",
-    image: "images/speakers/show.png",
-    speaker: " ",
-    position : " ",
   }
   ,
     {
