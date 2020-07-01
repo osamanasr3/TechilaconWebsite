@@ -1321,8 +1321,37 @@ a.online{
 .individual-tickets
 {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+}
+.card{
+  padding: 0;
+  margin: 20px;
+}
+.card img{
+  object-fit: cover;
+  align-self: center;
+}
+.card-img-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(208,208,208);
+background: linear-gradient(0deg, rgba(208,208,208,0.10717790534182425) 0%, rgba(0,0,0,0.8102591378348214) 100%);
+  padding: 20px;
+  padding-bottom: 5px;
+  transition: backgroundColor 2s;
+}
+
+.card-img-overlay:hover{
+  background: linear-gradient(0deg, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.9) 100%);
+}
+.card-img-overlay *{
+  color: #fff;
+}
+
+.card{
+  position: relative;
 }
 .tickets-title
 {
